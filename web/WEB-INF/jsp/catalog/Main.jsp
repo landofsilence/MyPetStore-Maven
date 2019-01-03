@@ -5,9 +5,40 @@
   Time: 19:29
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
 <%@ include file="../common/IncludeTop.jsp"%>
+
+<div class="nav-box text-color">
+
+    <ul class="f-nav" id='f-nav'>
+        <li>Main</li>
+        <li>Fish</li>
+        <li>Dogs</li>
+        <li>Cats</li>
+        <li>Reptiles</li>
+        <li>Birds</li>
+        <div class='sideline'></div></ul>
+</div>
+<div>
+<div class="swiper-card-wrapper">
+    <div class="swiper-card">
+        <div class="swiper-container swiper-container-card">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" data-mtpis='Exotic Varieties'><a href="viewCategory?categoryId=BIRDS"><img src="images/card_3.jpg"/></a></div>
+                <div class="swiper-slide" data-mtpis='Various Breeds'><a href="viewCategory?categoryId=DOGS"><img src="images/card_4.jpg"/></a></div>
+                <div class="swiper-slide" data-mtpis='Saltwater, Freshwater'><a href="viewCategory?categoryId=FISH"><img src="images/card_1.jpg"/></a></div>
+                <div class="swiper-slide" data-mtpis='Lizards, Turtles, Snakes'><a href="viewCategory?categoryId=REPTILES"><img src="images/card_5.jpg"/></a></div>
+                <div class="swiper-slide" data-mtpis='Various Breeds, Exotic Varieties'><a href="viewCategory?categoryId=CATS"><img src="images/card_2.jpg"/></a></div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+
+        </div>
+    </div>
+</div>
+<div class="btn-card-prev"></div>
+<div class="btn-card-next"></div>
+</div>
 
     <div id="Welcome">
         <div id="WelcomeContent">
@@ -47,5 +78,58 @@
         </div>
         <div id="Separator">&nbsp;</div>
     </div>
+
+<script  type="text/javascript">
+    //卡片切换
+    var swiper = new Swiper('.swiper-container-card', {
+        effect: 'coverflow',
+        grabCursor: true,
+        centeredSlides: true,
+        loop: true,
+        spaceBetween: 10,
+        slidesPerView: 'auto',
+        coverflowEffect: {
+            rotate: 10,
+            stretch: -10,
+            depth: 120,
+            modifier: 2,
+            slideShadows : false
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true
+        },
+        navigation: {
+            nextEl: '.btn-card-prev',
+            prevEl: '.btn-card-next',
+        },
+    });
+
+    //雪花
+    $(document).snowfall('clear');
+    $(document).snowfall({
+        image: "images/flake.png",
+        flakeCount:15,
+        minSize: 40,
+        maxSize: 60
+    });
+</script>
+
+<script type="text/javascript">
+
+
+    $('#f-nav').tooltip({
+        default: 0,       // 默认为空  --  选中默认值
+        width: '277',     // 限制宽度
+        height: '100',
+        textList: ['Main' ,'Fish' ,'Dogs','Cats', 'Reptiles' , 'Birds'],   // 每个导航的内容
+        type: 'slideMove',  // 必填, 选择内容
+        success: function(ret){
+
+        }   //初始化回调
+    });
+
+
+</script>
 
 <%@ include file="../common/IncludeBottom.jsp"%>

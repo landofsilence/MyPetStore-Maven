@@ -122,7 +122,8 @@ $("#keyword").keyup(function () {
             var html = "";
             for(var i=0;i<res.products.length;i++){
                 //每一个div还有鼠标移出、移入点击事件
-                html+="<li><a href='viewProduct?productId=" + res.products[i].productId + "'>"+res.products[i].name +"</a></li>";
+                html+="<li><a href='#'>"+res.products[i].name +"</a></li>";
+                //<a href='viewProduct?productId=" + res.products[i].productId + "'>"+res.products[i].name +"</a>
             }
             $("#completion").html(html);
             //显示为块级元素
@@ -161,7 +162,8 @@ $("#keyword").focus(function () {
             var html = "";
             for(var i=0;i<res.products.length;i++){
                 //每一个div还有鼠标移出、移入点击事件
-                html+="<li><a href='viewProduct?productId=" + res.products[i].productId + "'>"+res.products[i].name +"</a></li>";
+                html+="<li><a href='#'>"+res.products[i].name +"</a></li>";
+                //<a href='viewProduct?productId=" + res.products[i].productId + "'>"+res.products[i].name +"</a>
             }
             $("#completion").html(html);
             //显示为块级元素

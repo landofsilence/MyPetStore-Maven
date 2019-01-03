@@ -6,7 +6,19 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c980f683-795b-409f-b99b-03ec4c19d5a1" name="Default" comment="" />
+    <list default="true" id="c980f683-795b-409f-b99b-03ec4c19d5a1" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/catalog/Category.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/catalog/Category.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/catalog/Item.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/catalog/Item.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/catalog/Main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/catalog/Main.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/catalog/Product.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/catalog/Product.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/catalog/SearchProducts.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/catalog/SearchProducts.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/common/IncludeBottom.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/common/IncludeBottom.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/common/IncludeTop.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/common/IncludeTop.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/css/jpetstore.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/jpetstore.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/js/jpetstore.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/jpetstore.js" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,11 +29,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="jpetstore.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="jpetstore.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/js/jpetstore.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="314">
-              <caret line="143" column="3" selection-start-line="143" selection-start-column="3" selection-end-line="143" selection-end-column="3" />
+            <state relative-caret-position="132">
+              <caret line="186" column="55" selection-start-line="186" selection-start-column="55" selection-end-line="186" selection-end-column="55" />
               <folding>
                 <element signature="n#!!block;n#captchaOnClick#0" />
                 <element signature="n#!!block;n#signonCheck#0" />
@@ -36,20 +48,38 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IncludeTop.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/common/IncludeTop.jsp">
+      <file leaf-file-name="IncludeBottom.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/common/IncludeBottom.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="65" column="58" lean-forward="true" selection-start-line="65" selection-start-column="58" selection-end-line="65" selection-end-column="58" />
+            <state relative-caret-position="181">
+              <caret line="15" column="39" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="jpetstore.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/css/jpetstore.css">
+      <file leaf-file-name="IncludeTop.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/common/IncludeTop.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
+            <state relative-caret-position="199">
+              <caret line="20" column="36" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Category.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/catalog/Category.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="57">
+              <caret line="15" column="21" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Main.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/catalog/Main.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="224">
+              <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -105,6 +135,9 @@
       <replace>\&quot;</replace>
     </replaceStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -143,7 +176,6 @@
         <option value="$PROJECT_DIR$/src/per/jxnflzc/BigS.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/jsp/account/NewAccountForm.html" />
         <option value="$PROJECT_DIR$/src/per/jxnflzc/web/servlet/UsernameIsExistServlet.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/common/IncludeBottom.jsp" />
         <option value="$PROJECT_DIR$/src/per/jxnflzc/persistence/ProductDAO.java" />
         <option value="$PROJECT_DIR$/src/per/jxnflzc/persistence/impl/ProductDAOImpl.java" />
         <option value="$PROJECT_DIR$/src/per/jxnflzc/service/CategoryService.java" />
@@ -156,9 +188,10 @@
         <option value="$PROJECT_DIR$/src/per/jxnflzc/web/servlet/GetCaptchaServlet.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/jsp/account/IncludeAccountFields.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/jsp/account/EditAccountForm.jsp" />
-        <option value="$PROJECT_DIR$/web/css/jpetstore.css" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/common/IncludeTop.jsp" />
         <option value="$PROJECT_DIR$/web/js/jpetstore.js" />
+        <option value="$PROJECT_DIR$/web/css/jpetstore.css" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/common/IncludeBottom.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/common/IncludeTop.jsp" />
       </list>
     </option>
   </component>
@@ -192,8 +225,8 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="AndroidView" />
       <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -255,6 +288,14 @@
               <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
               <item name="jsp" type="462c0819:PsiDirectoryNode" />
+              <item name="catalog" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JPetStore" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JPetStore" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="jsp" type="462c0819:PsiDirectoryNode" />
               <item name="common" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -281,20 +322,20 @@
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="F:\MyJavaStudy\JPetStore\web" />
-      <recent name="F:\MyJavaStudy\JPetStore\web\WEB-INF" />
-      <recent name="F:\MyJavaStudy\JPetStore\web\WEB-INF\jsp" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="per.jxnflzc.web.servlet" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\MyJavaStudy\JPetStore\web\WEB-INF\jsp\catalog" />
       <recent name="F:\MyJavaStudy\JPetStore\src\per\jxnflzc\web\filter" />
       <recent name="F:\MyJavaStudy\JPetStore\web\WEB-INF\jsp\order" />
       <recent name="F:\MyJavaStudy\JPetStore\web\WEB-INF\jsp\account" />
       <recent name="F:\MyJavaStudy\JPetStore\src\per\jxnflzc\web\servlet" />
-      <recent name="F:\MyJavaStudy\JPetStore\src\per\jxnflzc\persistence\impl" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="per.jxnflzc.web.servlet" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\MyJavaStudy\JPetStore\web" />
+      <recent name="F:\MyJavaStudy\JPetStore\web\WEB-INF" />
+      <recent name="F:\MyJavaStudy\JPetStore\web\WEB-INF\jsp" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -513,14 +554,16 @@
       <workItem from="1545998061292" duration="1396000" />
       <workItem from="1546056931973" duration="17129000" />
       <workItem from="1546236916633" duration="466000" />
+      <workItem from="1546487315139" duration="2248000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="106822000" />
+    <option name="totallyTimeSpent" value="109070000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.50226927" side_tool="true" weight="0.5561056" />
@@ -540,10 +583,10 @@
       <window_info id="Image Layers" order="3" />
       <window_info anchor="bottom" id="Java Enterprise" order="10" weight="0.32838285" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="bottom" id="Version Control" order="12" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4977307" weight="0.33663365" />
+      <window_info anchor="bottom" id="Version Control" order="12" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4977307" visible="true" weight="0.3355372" />
       <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4751244" visible="true" weight="0.24810892" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4751244" visible="true" weight="0.25189108" />
       <window_info id="Web" order="6" sideWeight="0.52487564" side_tool="true" weight="0.24432677" />
       <window_info anchor="right" id="Theme Preview" order="7" />
       <window_info id="Favorites" order="5" side_tool="true" />
@@ -567,27 +610,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/catalog/Product.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="30" column="38" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/cart/Checkout.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="25" column="41" selection-start-line="25" selection-start-column="41" selection-end-line="25" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/order/ConfirmOrder.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/order/ListOrders.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
@@ -756,23 +778,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/jquery-3.3.1.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/js/jquery-3.3.1.min.js" />
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/common/IncludeBottom.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="21" column="63" selection-start-line="21" selection-start-column="63" selection-end-line="21" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/per/jxnflzc/persistence/ProductDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
@@ -798,13 +804,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="213">
           <caret line="56" column="5" lean-forward="true" selection-start-line="56" selection-start-column="5" selection-end-line="56" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/catalog/Category.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="15" column="21" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -899,24 +898,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/jpetstore.css">
+    <entry file="file://$PROJECT_DIR$/web/js/jquery-3.3.1.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/common/IncludeTop.jsp">
+    <entry file="file://$PROJECT_DIR$/web/css/jpetstore.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="65" column="58" lean-forward="true" selection-start-line="65" selection-start-column="58" selection-end-line="65" selection-end-column="58" />
+        <state relative-caret-position="517">
+          <caret line="453" lean-forward="true" selection-start-line="453" selection-end-line="453" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/f-nav.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/js/jpetstore.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="143" column="3" selection-start-line="143" selection-start-column="3" selection-end-line="143" selection-end-column="3" />
+        <state relative-caret-position="132">
+          <caret line="186" column="55" selection-start-line="186" selection-start-column="55" selection-end-line="186" selection-end-column="55" />
           <folding>
             <element signature="n#!!block;n#captchaOnClick#0" />
             <element signature="n#!!block;n#signonCheck#0" />
@@ -927,6 +935,39 @@
             <element signature="n#!!block;n#sendRequest#0" />
             <element signature="n#!!block;n#processResponse#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/index-style.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3036" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/catalog/Category.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="15" column="21" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/common/IncludeBottom.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="15" column="39" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/catalog/Main.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/common/IncludeTop.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="20" column="36" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
         </state>
       </provider>
     </entry>
