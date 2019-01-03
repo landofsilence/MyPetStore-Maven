@@ -16,6 +16,9 @@
 <head>
     <link rel="StyleSheet" href="css/jpetstore.css" type="text/css"
           media="screen"/>
+    <link type="text/css" href="css/swiper.min.css" rel="stylesheet" />
+    <link type="text/css" href="css/f-nav.css" rel="stylesheet" />
+    <link type="text/css" href="css/style.css" rel="stylesheet" />
 
     <meta name="generator"
           content="HTML Tidy for Linux/x86 (vers 1st November 2002), see www.w3.org"/>
@@ -28,6 +31,9 @@
     <meta http-equiv="Expires" content="Tue, 01 Jan 1980 1:00:00 GMT"/>
     <meta http-equiv="Pragma" content="no-cache"/>
     <script type="text/javascript" src="/js/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="js/swiper.min.js"></script>
+    <script type="text/javascript" src="js/snow.js"></script>
+    <script type="text/javascript" src="js/index-style.js"></script>
 
 </head>
 
@@ -36,13 +42,13 @@
 <div id="Header">
 
     <div id="Logo">
-        <div id="LogoContent">
+        <div id="LogoContent" class="main-color">
             <a href="main"><img src="images/logo-topbar.gif"/></a>
         </div>
     </div>
 
-    <div id="Menu">
-        <div id="MenuContent">
+    <div id="Menu" class="text-color">
+        <div id="MenuContent" class="main-color text-color">
             <a href="viewCart">
                 <img align="middle" name="img_cart" src="images/cart.gif"/>
             </a>
@@ -61,7 +67,7 @@
     </div>
 
     <div id="Search">
-        <div id="SearchContent">
+        <div id="SearchContent" class="main-color text-color">
             <form action="search" method="post">
                 <input type="text" id="keyword" name="keyword" size="14" autocomplete="off" disableautocomplete/>
                 <ul  id="completion" class="completion"></ul>
@@ -70,8 +76,8 @@
         </div>
     </div>
 
-    <div id="QuickLinks">
-        <a href="viewCategory?categoryId=FISH">
+    <div id="QuickLinks" class="text-color">
+        <!--<a href="viewCategory?categoryId=FISH">
             <img src ="images/sm_fish.gif"/>
         </a>
         <img src="images/separator.gif"/>
@@ -89,7 +95,7 @@
         <img src="images/separator.gif"/>
         <a href="viewCategory?categoryId=BIRDS">
             <img src="images/sm_birds.gif"/>
-        </a>
+        </a>-->
     </div>
 
 </div>

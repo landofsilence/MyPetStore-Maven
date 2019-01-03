@@ -10,15 +10,18 @@
 
 <div id="Footer">
 
-    <div id="PoweredBy">&nbsp<a href="http://www.csu.edu.cn">www.csu.edu.cn</a>
+    <div id="PoweredBy" class="main-color">&nbsp<a href="http://www.csu.edu.cn">www.csu.edu.cn</a>
     </div>
 
-    <div id="Banner">
+    <div id="Banner" class="main-color">
         IncludeBottom.jsp
     </div>
 
 </div>
 </body>
 <script type="text/javascript" src="/js/jpetstore.js"></script>
+<script type="text/javascript" src="js/snow.js"></script>
+<script type="text/javascript" src="js/swiper.min.js"></script>
+<script type="text/javascript" src="js/index-style.js"></script>
 </html>
 

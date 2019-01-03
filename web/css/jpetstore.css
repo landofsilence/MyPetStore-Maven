@@ -7,7 +7,12 @@ body {
     background-color: #dddddd;
 
 }
-
+a.acompletionUrl{
+    line-height:  30px;
+}
+li.licompletionUrl{
+    line-height:  30px;
+}
 div.product{
     height: 25px;
 }
@@ -422,7 +427,7 @@ body > #Banner {
     width: 83px;
     height: 83px;
     position: absolute;
-    bottom: 395px;
+    bottom: 315px;
     left: 10ex;
     z-index: 9;
     background: url("../images/prev.png") no-repeat;
@@ -435,7 +440,7 @@ body > #Banner {
     width: 83px;
     height: 83px;
     position: absolute;
-    bottom: 395px;
+    bottom: 315px;
     right: 12ex;
     z-index: 9;
     background: url("../images/next.png") no-repeat;
