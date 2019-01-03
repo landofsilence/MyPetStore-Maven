@@ -1,8 +1,7 @@
 package per.jxnflzc.web.servlet;
 
-import per.jxnflzc.domain.*;
+import per.jxnflzc.domain.Order;
 import per.jxnflzc.service.OrderService;
-import sun.java2d.pipe.hw.AccelDeviceEventListener;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -11,9 +10,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
 
 @WebServlet(name = "NewOrderServlet" , urlPatterns = "/NewOrder")
 public class NewOrderServlet extends HttpServlet {
@@ -36,13 +32,9 @@ public class NewOrderServlet extends HttpServlet {
         if(skipType.equals("2"))
         {
             order = (Order)session.getAttribute("order");
-			Account account = (Account)session.getAttribute("account") ;
-			Cart cart = (Cart)session.getAttribute("cart") ;
 
             order.setCardType(request.getParameter("cardType"));
             order.setCreditCard(request.getParameter("creditCard"));
-            order.setUsername(account.getUsername());
-            order.setTotalPrice(cart.getSubTotal());
             order.setExpiryDate(request.getParameter("expiryDate"));
             order.setBillToFirstName(request.getParameter("billToFirstName"));
             order.setBillToLastName(request.getParameter("billToLastName"));
@@ -71,8 +63,17 @@ public class NewOrderServlet extends HttpServlet {
                 request.getRequestDispatcher(CONFIRM).forward(request, response);
             }
             else{
+                order.setShipToFirstName(request.getParameter("shipToFirstName"));
+                order.setShipToLastName(request.getParameter("shipToLastName"));
+                order.setShipAddress1(request.getParameter("shipAddress1"));
+                order.setShipAddress2(request.getParameter("shipAddress2"));
+                order.setShipCity(request.getParameter("shipCity"));
+                order.setShipCountry(request.getParameter("shipCountry"));
+                order.setShipState(request.getParameter("shipState"));
+                order.setShipZip(request.getParameter("shipZip"));
+
                 session.setAttribute("order",order);
-                request.getRequestDispatcher(SHIP).forward(request, response);
+                request.getRequestDispatcher(CONFIRM).forward(request, response);
             }
 
         }
@@ -94,9 +95,6 @@ public class NewOrderServlet extends HttpServlet {
 
         }
         if(skipType.equals("4")){
-        	Cart cart = (Cart)session.getAttribute("cart");
-        	cart.clear();
-			session.setAttribute("cart", cart);
             order = (Order)session.getAttribute("order");
             OrderService s = new OrderService();
             s.insertOrder(order);
@@ -104,17 +102,4 @@ public class NewOrderServlet extends HttpServlet {
 
         }
     }
-
-    private List<LineItem> move(List<CartItem> cartItemList){
-		List<LineItem> lineItemList = new ArrayList<LineItem>();
-
-		for (int i = 0; i < cartItemList.size(); i++){
-			LineItem lineItem = new LineItem();
-			lineItem.setItem(cartItemList.get(i).getItem());
-			lineItem.setItemId(cartItemList.get(i).getItem().getItemId());
-			lineItem.setQuantity(cartItemList.get(i).getQuantity());
-		}
-
-		return lineItemList;
-	}
 }
