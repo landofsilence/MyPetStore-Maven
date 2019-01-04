@@ -8,7 +8,7 @@ import java.sql.*;
  */
 public class DBUtil {
 	private static String driver = "com.mysql.jdbc.Driver";
-	private static String url = "jdbc:mysql://localhost:3306/mypetstore?useSSL=false";//URL指向访问的数据库名，jsp_data
+	private static String url = "jdbc:mysql://127.0.0.1:3306/mypetstore?useSSL=false";//URL指向访问的数据库名
 	private static String user = "root";//Mysql配置时的用户名
 	private static String password = "990806";//密码
 

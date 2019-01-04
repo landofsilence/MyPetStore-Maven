@@ -18,7 +18,7 @@
           media="screen"/>
     <link type="text/css" href="css/swiper.min.css" rel="stylesheet" />
     <link type="text/css" href="css/f-nav.css" rel="stylesheet" />
-    <link type="text/css" href="css/style.css" rel="stylesheet" />
+
 
     <meta name="generator"
           content="HTML Tidy for Linux/x86 (vers 1st November 2002), see www.w3.org"/>
@@ -77,6 +77,7 @@
     </div>
 
     <div id="QuickLinks" class="text-color">
+        <img src=""/>
         <!--<a href="viewCategory?categoryId=FISH">
             <img src ="images/sm_fish.gif"/>
         </a>

@@ -8,6 +8,7 @@
 
 <%@ include file="../common/IncludeTop.jsp"%>
 
+<!----><script type="text/javascript" src="js/main.js"></script>
 <div class="nav-box text-color">
 
     <ul class="f-nav" id='f-nav'>
@@ -131,5 +132,6 @@
 
 
 </script>
+
 
 <%@ include file="../common/IncludeBottom.jsp"%>

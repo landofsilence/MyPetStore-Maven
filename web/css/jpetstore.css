@@ -428,7 +428,6 @@ body > #Banner {
     width: 83px;
     height: 83px;
     position: absolute;
-    bottom: 315px;
     left: 10ex;
     z-index: 9;
     background: url("../images/prev.png") no-repeat;
@@ -441,7 +440,7 @@ body > #Banner {
     width: 83px;
     height: 83px;
     position: absolute;
-    bottom: 315px;
+    bottom: 105px;
     right: 12ex;
     z-index: 9;
     background: url("../images/next.png") no-repeat;

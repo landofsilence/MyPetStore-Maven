@@ -53,7 +53,7 @@
 		</tr>
 		<tr>
 			<td>Zip:</td>
-			<td><<input type="text" size="10" name="billZip"  value="${sessionScope.account.zip}"/></td>
+			<td><input type="text" size="10" name="billZip"  value="${sessionScope.account.zip}"/></td>
 		</tr>
 		<tr>
 			<td>Country:</td>
@@ -99,7 +99,7 @@
 			</tr>
 			<tr>
 				<td>Zip:</td>
-				<td><<input type="text" size="10" name="shipZip"  value="${sessionScope.account.zip}"/></td>
+				<td><input type="text" size="10" name="shipZip"  value="${sessionScope.account.zip}"/></td>
 			</tr>
 			<tr>
 				<td>Country:</td>
