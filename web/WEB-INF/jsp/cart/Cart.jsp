@@ -52,7 +52,6 @@
                     </c:forEach>
                     <tr class="tipTr">
                         <td class="tipTd" colspan="7">
-                            <!--<input type="submit" value="Update Cart">-->
                             <p class="wrong"></p>
                         </td>
                         <td>
