@@ -9,6 +9,8 @@ import per.jxnflzc.domain.Account;
 public interface AccountDAO {
 	Account findByUserNameAndPassword(Account loginAccount);
 
+	Account findAccountExistByUserNameAndPassword(Account loginAccount);
+
 	Account findByUserName(Account registerAccount);
 
 	Account findEditAccount(Account editAccount);

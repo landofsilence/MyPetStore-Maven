@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+    <constant name="struts.devMode" value="true" />
+    <package name="helloworld" extends="struts-default">
+
+        <action name="main"
+                class="per.jxnflzc.web.action.MainAction"
+                method="execute">
+            <result name="success">/WEB-INF/jsp/catalog/Main.jsp</result>
+        </action>
+
+        <action name="SignonForm"
+                class="per.jxnflzc.web.action.MainAction"
+                method="execute">
+            <result name="success">/WEB-INF/jsp/account/SignonForm.jsp</result>
+        </action>
+
+        <action name="Signon"
+                class="per.jxnflzc.web.action.AccountAction"
+                method="signon">
+            <result name="success">/WEB-INF/jsp/catalog/Main.jsp</result>
+            <result name="failed">/WEB-INF/jsp/account/SignonForm.jsp</result>
+        </action>
+
+        <action name="Signout"
+                class="per.jxnflzc.web.action.AccountAction"
+                method="signout">
+            <result name="success">/WEB-INF/jsp/catalog/Main.jsp</result>
+        </action>
+        <!-- more actions can be listed here -->
+
+    </package>
+    <!-- more packages can be listed here -->
+
+</struts>

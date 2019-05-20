@@ -7,17 +7,154 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c980f683-795b-409f-b99b-03ec4c19d5a1" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/River.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/per/jxnflzc/domain/AccountMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/per/jxnflzc/util/SessionFactoryUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/per/jxnflzc/web/action/AccountAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/per/jxnflzc/web/action/MainAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/JPetStore_war_exploded/WEB-INF/classes/per/jxnflzc/util/DBUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/JPetStore_war_exploded/WEB-INF/classes/per/jxnflzc/util/DBUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/JPetStore_war_exploded/WEB-INF/classes/per/jxnflzc/web/servlet/NewOrderServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/JPetStore_war_exploded/WEB-INF/classes/per/jxnflzc/web/servlet/NewOrderServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/JPetStore_war_exploded/WEB-INF/jsp/catalog/Main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/JPetStore_war_exploded/WEB-INF/jsp/catalog/Main.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/JPetStore_war_exploded/WEB-INF/jsp/common/IncludeTop.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/JPetStore_war_exploded/WEB-INF/jsp/common/IncludeTop.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/JPetStore_war_exploded/WEB-INF/jsp/order/NewOrderForm.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/JPetStore_war_exploded/WEB-INF/jsp/order/NewOrderForm.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/JPetStore_war_exploded/css/jpetstore.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/JPetStore_war_exploded/css/jpetstore.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JPetStore.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JPetStore.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JPetStore_war_exploded/WEB-INF/classes/per/jxnflzc/persistence/AccountDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/JPetStore_war_exploded/WEB-INF/classes/per/jxnflzc/persistence/AccountDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JPetStore_war_exploded/WEB-INF/classes/per/jxnflzc/persistence/impl/AccountDAOImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JPetStore_war_exploded/WEB-INF/classes/per/jxnflzc/persistence/impl/CategoryDAOImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JPetStore_war_exploded/WEB-INF/classes/per/jxnflzc/persistence/impl/ItemDAOImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JPetStore_war_exploded/WEB-INF/classes/per/jxnflzc/persistence/impl/LineItemDAOImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JPetStore_war_exploded/WEB-INF/classes/per/jxnflzc/persistence/impl/OrderDAOImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JPetStore_war_exploded/WEB-INF/classes/per/jxnflzc/persistence/impl/ProductDAOImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JPetStore_war_exploded/WEB-INF/classes/per/jxnflzc/persistence/impl/RecordDAOImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JPetStore_war_exploded/WEB-INF/classes/per/jxnflzc/service/AccountService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JPetStore_war_exploded/WEB-INF/classes/per/jxnflzc/service/CategoryService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JPetStore_war_exploded/WEB-INF/classes/per/jxnflzc/service/OrderService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JPetStore_war_exploded/WEB-INF/classes/per/jxnflzc/service/RecordService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JPetStore_war_exploded/WEB-INF/classes/per/jxnflzc/web/filter/LoggingFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JPetStore_war_exploded/WEB-INF/classes/per/jxnflzc/web/filter/RecordFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JPetStore_war_exploded/WEB-INF/classes/per/jxnflzc/web/servlet/AddToCartServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JPetStore_war_exploded/WEB-INF/classes/per/jxnflzc/web/servlet/ChangeCartServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JPetStore_war_exploded/WEB-INF/classes/per/jxnflzc/web/servlet/CheckOutServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JPetStore_war_exploded/WEB-INF/classes/per/jxnflzc/web/servlet/CompletionServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JPetStore_war_exploded/WEB-INF/classes/per/jxnflzc/web/servlet/EditAccountFormServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JPetStore_war_exploded/WEB-INF/classes/per/jxnflzc/web/servlet/EditAccountServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JPetStore_war_exploded/WEB-INF/classes/per/jxnflzc/web/servlet/GetCaptchaServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JPetStore_war_exploded/WEB-INF/classes/per/jxnflzc/web/servlet/ImageServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JPetStore_war_exploded/WEB-INF/classes/per/jxnflzc/web/servlet/MainServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JPetStore_war_exploded/WEB-INF/classes/per/jxnflzc/web/servlet/NewOrderServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JPetStore_war_exploded/WEB-INF/classes/per/jxnflzc/web/servlet/RegisterFormServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JPetStore_war_exploded/WEB-INF/classes/per/jxnflzc/web/servlet/RegisterServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JPetStore_war_exploded/WEB-INF/classes/per/jxnflzc/web/servlet/RemoveItemFromCartServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JPetStore_war_exploded/WEB-INF/classes/per/jxnflzc/web/servlet/SearchServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JPetStore_war_exploded/WEB-INF/classes/per/jxnflzc/web/servlet/SignonFormServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JPetStore_war_exploded/WEB-INF/classes/per/jxnflzc/web/servlet/SignonServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JPetStore_war_exploded/WEB-INF/classes/per/jxnflzc/web/servlet/SignoutServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JPetStore_war_exploded/WEB-INF/classes/per/jxnflzc/web/servlet/UpdateAccountServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JPetStore_war_exploded/WEB-INF/classes/per/jxnflzc/web/servlet/UpdateCartServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JPetStore_war_exploded/WEB-INF/classes/per/jxnflzc/web/servlet/UsernameIsExistServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JPetStore_war_exploded/WEB-INF/classes/per/jxnflzc/web/servlet/ViewCartServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JPetStore_war_exploded/WEB-INF/classes/per/jxnflzc/web/servlet/ViewCategoryServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JPetStore_war_exploded/WEB-INF/classes/per/jxnflzc/web/servlet/ViewItemServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JPetStore_war_exploded/WEB-INF/classes/per/jxnflzc/web/servlet/ViewOrderServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JPetStore_war_exploded/WEB-INF/classes/per/jxnflzc/web/servlet/ViewProductServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JPetStore_war_exploded/WEB-INF/classes/per/jxnflzc/web/servlet/ViewRecordServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JPetStore_war_exploded/WEB-INF/jsp/account/NewAccountForm.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/JPetStore_war_exploded/WEB-INF/jsp/account/NewAccountForm.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JPetStore_war_exploded/WEB-INF/jsp/account/SignonForm.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/JPetStore_war_exploded/WEB-INF/jsp/account/SignonForm.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JPetStore_war_exploded/WEB-INF/jsp/cart/Cart.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/JPetStore_war_exploded/WEB-INF/jsp/cart/Cart.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JPetStore_war_exploded/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/JPetStore_war_exploded/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JPetStore_war_exploded/js/jpetstore.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/JPetStore_war_exploded/js/jpetstore.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/JPetStore_war_exploded/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/JPetStore_war_exploded/log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JPetStore/per/jxnflzc/util/DBUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JPetStore/per/jxnflzc/util/DBUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JPetStore/per/jxnflzc/web/servlet/NewOrderServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JPetStore/per/jxnflzc/web/servlet/NewOrderServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JPetStore/per/jxnflzc/persistence/AccountDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JPetStore/per/jxnflzc/persistence/AccountDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JPetStore/per/jxnflzc/persistence/impl/AccountDAOImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JPetStore/per/jxnflzc/persistence/impl/CategoryDAOImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JPetStore/per/jxnflzc/persistence/impl/ItemDAOImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JPetStore/per/jxnflzc/persistence/impl/LineItemDAOImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JPetStore/per/jxnflzc/persistence/impl/OrderDAOImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JPetStore/per/jxnflzc/persistence/impl/ProductDAOImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JPetStore/per/jxnflzc/persistence/impl/RecordDAOImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JPetStore/per/jxnflzc/service/AccountService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JPetStore/per/jxnflzc/service/CategoryService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JPetStore/per/jxnflzc/service/OrderService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JPetStore/per/jxnflzc/service/RecordService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JPetStore/per/jxnflzc/web/filter/LoggingFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JPetStore/per/jxnflzc/web/filter/RecordFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JPetStore/per/jxnflzc/web/servlet/AddToCartServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JPetStore/per/jxnflzc/web/servlet/ChangeCartServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JPetStore/per/jxnflzc/web/servlet/CheckOutServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JPetStore/per/jxnflzc/web/servlet/CompletionServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JPetStore/per/jxnflzc/web/servlet/EditAccountFormServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JPetStore/per/jxnflzc/web/servlet/EditAccountServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JPetStore/per/jxnflzc/web/servlet/GetCaptchaServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JPetStore/per/jxnflzc/web/servlet/ImageServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JPetStore/per/jxnflzc/web/servlet/MainServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JPetStore/per/jxnflzc/web/servlet/NewOrderServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JPetStore/per/jxnflzc/web/servlet/RegisterFormServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JPetStore/per/jxnflzc/web/servlet/RegisterServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JPetStore/per/jxnflzc/web/servlet/RemoveItemFromCartServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JPetStore/per/jxnflzc/web/servlet/SearchServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JPetStore/per/jxnflzc/web/servlet/SignonFormServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JPetStore/per/jxnflzc/web/servlet/SignonServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JPetStore/per/jxnflzc/web/servlet/SignoutServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JPetStore/per/jxnflzc/web/servlet/UpdateAccountServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JPetStore/per/jxnflzc/web/servlet/UpdateCartServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JPetStore/per/jxnflzc/web/servlet/UsernameIsExistServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JPetStore/per/jxnflzc/web/servlet/ViewCartServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JPetStore/per/jxnflzc/web/servlet/ViewCategoryServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JPetStore/per/jxnflzc/web/servlet/ViewItemServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JPetStore/per/jxnflzc/web/servlet/ViewOrderServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JPetStore/per/jxnflzc/web/servlet/ViewProductServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JPetStore/per/jxnflzc/web/servlet/ViewRecordServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/per/jxnflzc/domain/Sequence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/per/jxnflzc/domain/Sequence.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/per/jxnflzc/persistence/AccountDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/per/jxnflzc/persistence/AccountDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/per/jxnflzc/persistence/CategoryDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/per/jxnflzc/persistence/CategoryDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/per/jxnflzc/persistence/ItemDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/per/jxnflzc/persistence/ItemDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/per/jxnflzc/persistence/LineItemDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/per/jxnflzc/persistence/LineItemDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/per/jxnflzc/persistence/OrderDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/per/jxnflzc/persistence/OrderDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/per/jxnflzc/persistence/ProductDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/per/jxnflzc/persistence/ProductDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/per/jxnflzc/persistence/RecordDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/per/jxnflzc/persistence/RecordDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/per/jxnflzc/persistence/impl/AccountDAOImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/per/jxnflzc/persistence/impl/CategoryDAOImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/per/jxnflzc/persistence/impl/ItemDAOImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/per/jxnflzc/persistence/impl/LineItemDAOImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/per/jxnflzc/persistence/impl/OrderDAOImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/per/jxnflzc/persistence/impl/ProductDAOImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/per/jxnflzc/persistence/impl/RecordDAOImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/per/jxnflzc/service/AccountService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/per/jxnflzc/service/CategoryService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/per/jxnflzc/service/OrderService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/per/jxnflzc/service/RecordService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/per/jxnflzc/util/DBUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/per/jxnflzc/util/DBUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/per/jxnflzc/web/filter/LoggingFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/per/jxnflzc/web/filter/RecordFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/per/jxnflzc/web/servlet/AddToCartServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/per/jxnflzc/web/servlet/ChangeCartServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/per/jxnflzc/web/servlet/CheckOutServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/per/jxnflzc/web/servlet/CompletionServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/per/jxnflzc/web/servlet/EditAccountFormServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/per/jxnflzc/web/servlet/EditAccountServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/per/jxnflzc/web/servlet/GetCaptchaServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/per/jxnflzc/web/servlet/ImageServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/per/jxnflzc/web/servlet/MainServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/per/jxnflzc/web/servlet/NewOrderServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/per/jxnflzc/web/servlet/RegisterFormServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/per/jxnflzc/web/servlet/RegisterServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/per/jxnflzc/web/servlet/RemoveItemFromCartServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/per/jxnflzc/web/servlet/SearchServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/per/jxnflzc/web/servlet/SignonFormServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/per/jxnflzc/web/servlet/SignonServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/per/jxnflzc/web/servlet/SignoutServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/per/jxnflzc/web/servlet/UpdateAccountServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/per/jxnflzc/web/servlet/UpdateCartServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/per/jxnflzc/web/servlet/UsernameIsExistServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/per/jxnflzc/web/servlet/ViewCartServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/per/jxnflzc/web/servlet/ViewCategoryServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/per/jxnflzc/web/servlet/ViewItemServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/per/jxnflzc/web/servlet/ViewOrderServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/per/jxnflzc/web/servlet/ViewProductServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/per/jxnflzc/web/servlet/ViewRecordServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/account/NewAccountForm.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/account/NewAccountForm.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/account/SignonForm.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/account/SignonForm.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/js/jpetstore.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/jpetstore.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,67 +166,72 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="jpetstore.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/js/jpetstore.js">
+      <file leaf-file-name="test.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="257">
-              <caret line="174" column="48" lean-forward="true" selection-start-line="174" selection-start-column="48" selection-end-line="174" selection-end-column="48" />
+            <state relative-caret-position="475">
+              <caret line="29" column="37" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="37" />
               <folding>
-                <element signature="n#!!block;n#captchaOnClick#0" />
-                <element signature="n#!!block;n#signonCheck#0" />
-                <element signature="n#!!block;n#editAccountCheck#0" />
-                <element signature="n#!!block;n#newAccountCheck#0" />
-                <element signature="n#!!block;n#createXMLHttpRequest#0" />
-                <element signature="n#!!block;n#usernameIsExist#0" />
-                <element signature="n#!!block;n#sendRequest#0" />
-                <element signature="n#!!block;n#processResponse#0" />
-                <element signature="e#4285#4333#0" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Main.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/catalog/Main.jsp">
+      <file leaf-file-name="SignonForm.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/account/SignonForm.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="10" column="64" selection-start-line="10" selection-start-column="64" selection-end-line="10" selection-end-column="64" />
+            <state relative-caret-position="399">
+              <caret line="21" column="34" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="34" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/js/main.js">
+      <file leaf-file-name="AccountAction.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/per/jxnflzc/web/action/AccountAction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="1" column="114" selection-start-line="1" selection-start-column="114" selection-end-line="1" selection-end-column="114" />
+            <state relative-caret-position="156">
+              <caret line="34" column="44" selection-start-line="34" selection-start-column="44" selection-end-line="34" selection-end-column="44" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#signon#0;class#AccountAction#0" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="jpetstore.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/css/jpetstore.css">
+      <file leaf-file-name="struts.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/struts.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="402">
-              <caret line="429" column="23" selection-start-line="429" selection-start-column="23" selection-end-line="429" selection-end-column="23" />
+            <state relative-caret-position="418">
+              <caret line="22" column="30" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NewOrderForm.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/order/NewOrderForm.jsp">
+      <file leaf-file-name="AccountDAO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/per/jxnflzc/persistence/AccountDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="542">
-              <caret line="101" column="20" selection-start-line="101" selection-start-column="20" selection-end-line="101" selection-end-column="20" />
+            <state relative-caret-position="171">
+              <caret line="9" column="37" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="37" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IncludeTop.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/common/IncludeTop.jsp">
+      <file leaf-file-name="OrderDAO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/per/jxnflzc/persistence/OrderDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="33" column="67" lean-forward="true" selection-start-line="33" selection-start-column="67" selection-end-line="34" selection-end-column="61" />
+            <state relative-caret-position="76">
+              <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RecordDAO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/per/jxnflzc/persistence/RecordDAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="76">
+              <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -102,8 +244,9 @@
         <option value="HTML File" />
         <option value="Jsp File" />
         <option value="Interface" />
-        <option value="Class" />
         <option value="JavaScript File" />
+        <option value="FxmlFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -135,6 +278,7 @@
       <find>'</find>
       <find>for</find>
       <find>line-height</find>
+      <find>package main.jxnflzc.domain;</find>
     </findStrings>
     <replaceStrings>
       <replace>images</replace>
@@ -144,6 +288,7 @@
       <replace>signon</replace>
       <replace>sessionScope</replace>
       <replace>\&quot;</replace>
+      <replace>package per.jxnflzc.domain;</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -152,57 +297,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/cart/Item.jsp" />
-        <option value="$PROJECT_DIR$/src/per/jxnflzc/persistence/impl/ItemDAOImpl - 副本.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/catalog/Product.jsp" />
-        <option value="$PROJECT_DIR$/src/per/jxnflzc/persistence/impl/ItemDAOImpl.java" />
-        <option value="$PROJECT_DIR$/src/per/jxnflzc/web/servlet/ViewItemServlet.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/order/ConfirmOrder.jsp" />
-        <option value="$PROJECT_DIR$/src/per/jxnflzc/persistence/impl/OrderDAOImpl.java" />
-        <option value="$PROJECT_DIR$/src/per/jxnflzc/domain/Cart.java" />
-        <option value="$PROJECT_DIR$/src/per/jxnflzc/web/servlet/NewOrderServlet.java" />
-        <option value="$PROJECT_DIR$/src/per/jxnflzc/domain/VerificationCode.java" />
-        <option value="$PROJECT_DIR$/src/per/jxnflzc/web/servlet/SignonServlet.java" />
-        <option value="$PROJECT_DIR$/src/per/jxnflzc/web/servlet/RegisterServlet.java" />
-        <option value="$PROJECT_DIR$/src/per/jxnflzc/persistence/impl/AccountDAOImpl.java" />
-        <option value="$PROJECT_DIR$/src/per/jxnflzc/persistence/RecordDAOImpl.java" />
-        <option value="$PROJECT_DIR$/src/per/jxnflzc/persistence/RecordDAO.java" />
-        <option value="$PROJECT_DIR$/src/per/jxnflzc/web/filter/RecordFilter.java" />
-        <option value="$PROJECT_DIR$/src/per/jxnflzc/web/servlet/EditAccountServlet.java" />
-        <option value="$PROJECT_DIR$/src/per/jxnflzc/web/servlet/UpdateAccountServlet.java" />
-        <option value="$PROJECT_DIR$/src/per/jxnflzc/persistence/impl/RecordDAOImpl.java" />
-        <option value="$PROJECT_DIR$/src/per/jxnflzc/domain/Record.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/cart/Checkout.jsp" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/order/ListOrders.jsp" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/account/Record.jsp" />
-        <option value="$PROJECT_DIR$/src/per/jxnflzc/web/servlet/CheckOutServlet.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/order/ViewOrder.jsp" />
-        <option value="$PROJECT_DIR$/src/per/jxnflzc/web/servlet/ImageServlet.java" />
-        <option value="$PROJECT_DIR$/src/per/jxnflzc/web/filter/LoggingFilter.java" />
-        <option value="$PROJECT_DIR$/src/per/jxnflzc/BigS.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/account/NewAccountForm.html" />
-        <option value="$PROJECT_DIR$/src/per/jxnflzc/web/servlet/UsernameIsExistServlet.java" />
         <option value="$PROJECT_DIR$/src/per/jxnflzc/persistence/ProductDAO.java" />
         <option value="$PROJECT_DIR$/src/per/jxnflzc/persistence/impl/ProductDAOImpl.java" />
         <option value="$PROJECT_DIR$/src/per/jxnflzc/service/CategoryService.java" />
-        <option value="$PROJECT_DIR$/src/per/jxnflzc/domain/Product.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/account/NewAccountForm.jsp" />
         <option value="$PROJECT_DIR$/src/per/jxnflzc/web/servlet/ChangeCartServlet.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/cart/Cart.jsp" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/account/SignonForm.jsp" />
         <option value="$PROJECT_DIR$/src/per/jxnflzc/web/servlet/CompletionServlet.java" />
         <option value="$PROJECT_DIR$/src/per/jxnflzc/web/servlet/GetCaptchaServlet.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/jsp/account/IncludeAccountFields.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/jsp/account/EditAccountForm.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/jsp/common/IncludeBottom.jsp" />
         <option value="$PROJECT_DIR$/web/css/style.css" />
-        <option value="$PROJECT_DIR$/web/js/jpetstore.js" />
         <option value="$PROJECT_DIR$/src/per/jxnflzc/util/DBUtil.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/jsp/common/IncludeTop.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/jsp/order/NewOrderForm.jsp" />
         <option value="$PROJECT_DIR$/web/css/jpetstore.css" />
         <option value="$PROJECT_DIR$/web/WEB-INF/jsp/catalog/Main.jsp" />
         <option value="$PROJECT_DIR$/web/js/main.js" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/cart/Cart.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/account/NewAccountForm.jsp" />
+        <option value="$PROJECT_DIR$/web/js/jpetstore.js" />
+        <option value="$PROJECT_DIR$/src/per/jxnflzc/web/servlet/AddToCartServlet.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/classes/struts.xml.fxml" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/classes/struts.xml" />
+        <option value="$PROJECT_DIR$/pom.xml.fxml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/per/jxnflzc/service/OrderService.java" />
+        <option value="$PROJECT_DIR$/src/per/jxnflzc/domain/Account.java" />
+        <option value="$PROJECT_DIR$/src/per/jxnflzc/domain/Cart.java" />
+        <option value="$PROJECT_DIR$/src/per/jxnflzc/domain/CartItem.java" />
+        <option value="$PROJECT_DIR$/src/per/jxnflzc/domain/Category.java" />
+        <option value="$PROJECT_DIR$/src/per/jxnflzc/domain/Item.java" />
+        <option value="$PROJECT_DIR$/src/per/jxnflzc/domain/LineItem.java" />
+        <option value="$PROJECT_DIR$/src/per/jxnflzc/domain/Order.java" />
+        <option value="$PROJECT_DIR$/src/per/jxnflzc/domain/Product.java" />
+        <option value="$PROJECT_DIR$/src/test/jxnflzc/domain/Record.java" />
+        <option value="$PROJECT_DIR$/src/per/jxnflzc/domain/Record.java" />
+        <option value="$PROJECT_DIR$/src/per/jxnflzc/persistence/impl/AccountDAOImpl.java" />
+        <option value="$PROJECT_DIR$/src/per/jxnflzc/domain/Sequence.java" />
+        <option value="$PROJECT_DIR$/src/per/jxnflzc/persistence/impl/CategoryDAOImpl.java" />
+        <option value="$PROJECT_DIR$/src/per/jxnflzc/persistence/impl/ItemDAOImpl.java" />
+        <option value="$PROJECT_DIR$/src/per/jxnflzc/persistence/impl/LineItemDAOImpl.java" />
+        <option value="$PROJECT_DIR$/src/per/jxnflzc/persistence/impl/OrderDAOImpl.java" />
+        <option value="$PROJECT_DIR$/mybatis-config.xml" />
+        <option value="$PROJECT_DIR$/src/per/jxnflzc/util/SessionFactoryUtil.java" />
+        <option value="$PROJECT_DIR$/src/per/jxnflzc/persistence/AccountDAO.java" />
+        <option value="$PROJECT_DIR$/src/per/jxnflzc/domain/AccountMapper.xml" />
+        <option value="$PROJECT_DIR$/src/test/test.java" />
+        <option value="$PROJECT_DIR$/src/per/jxnflzc/web/action/MainAction.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/account/SignonForm.jsp" />
+        <option value="$PROJECT_DIR$/src/struts.xml" />
+        <option value="$PROJECT_DIR$/src/per/jxnflzc/web/action/AccountAction.java" />
       </list>
     </option>
   </component>
@@ -236,7 +381,6 @@
     </navigator>
     <panes>
       <pane id="AndroidView" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -260,24 +404,18 @@
               <item name="JPetStore" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="jxnflzc" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="action" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JPetStore" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JPetStore" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="JPetStore" type="b2602c69:ProjectViewProjectNode" />
               <item name="JPetStore" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JPetStore" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JPetStore" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JPetStore" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JPetStore" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="JPetStore" type="b2602c69:ProjectViewProjectNode" />
@@ -298,7 +436,7 @@
               <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
               <item name="jsp" type="462c0819:PsiDirectoryNode" />
-              <item name="catalog" type="462c0819:PsiDirectoryNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="JPetStore" type="b2602c69:ProjectViewProjectNode" />
@@ -308,23 +446,12 @@
               <item name="jsp" type="462c0819:PsiDirectoryNode" />
               <item name="common" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="JPetStore" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JPetStore" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="jsp" type="462c0819:PsiDirectoryNode" />
-              <item name="order" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JPetStore" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -332,29 +459,30 @@
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://F:/MyJavaStudy/JPetStore/src/per/jxnflzc/web/filter/RecordFilter.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/web" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../swingchat-master" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="F:\MyJavaStudy\JPetStore\web" />
-      <recent name="F:\MyJavaStudy\JPetStore\web\WEB-INF" />
-      <recent name="F:\MyJavaStudy\JPetStore\web\WEB-INF\jsp" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\MyJavaStudy\JPetStore\src\per\jxnflzc\util" />
+      <recent name="F:\MyJavaStudy\JPetStore\src\per\jxnflzc\domain" />
+      <recent name="F:\MyJavaStudy\JPetStore" />
+      <recent name="F:\MyJavaStudy\JPetStore\web\WEB-INF\classes" />
+      <recent name="F:\MyJavaStudy\JPetStore\web\WEB-INF\jsp\order" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="per.jxnflzc.web.servlet" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\MyJavaStudy\JPetStore\web\WEB-INF\jsp\order" />
-      <recent name="F:\MyJavaStudy\JPetStore\src\per\jxnflzc\web\servlet" />
-      <recent name="F:\MyJavaStudy\JPetStore\web\WEB-INF\jsp\catalog" />
-      <recent name="F:\MyJavaStudy\JPetStore\src\per\jxnflzc\web\filter" />
-      <recent name="F:\MyJavaStudy\JPetStore\web\WEB-INF\jsp\account" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\MyJavaStudy\JPetStore\src" />
+      <recent name="F:\MyJavaStudy\JPetStore\web" />
+      <recent name="F:\MyJavaStudy\JPetStore\web\WEB-INF" />
+      <recent name="F:\MyJavaStudy\JPetStore\web\WEB-INF\jsp" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -405,6 +533,17 @@
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test.test" />
+      <module name="JPetStore" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -519,9 +658,11 @@
       <item itemvalue="Application.DBUtil" />
       <item itemvalue="Application.VerificationCode" />
       <item itemvalue="Application.BigS" />
+      <item itemvalue="Application.test" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.test" />
         <item itemvalue="Application.BigS" />
         <item itemvalue="Application.VerificationCode" />
         <item itemvalue="Application.DBUtil" />
@@ -577,7 +718,18 @@
       <workItem from="1546493111684" duration="109000" />
       <workItem from="1546516063883" duration="470000" />
       <workItem from="1546526485278" duration="1139000" />
-      <workItem from="1546582700878" duration="2201000" />
+      <workItem from="1546582700878" duration="4455000" />
+      <workItem from="1547347497239" duration="1430000" />
+      <workItem from="1547689941340" duration="341000" />
+      <workItem from="1547773981413" duration="58000" />
+      <workItem from="1555996344927" duration="1338000" />
+      <workItem from="1556014488380" duration="1077000" />
+      <workItem from="1556273832785" duration="44000" />
+      <workItem from="1558328419883" duration="4069000" />
+      <workItem from="1558352346518" duration="2244000" />
+      <workItem from="1558356506709" duration="2430000" />
+      <workItem from="1558359457035" duration="620000" />
+      <workItem from="1558360254219" duration="172000" />
     </task>
     <task id="LOCAL-00001" summary="Second">
       <created>1546489769782</created>
@@ -607,19 +759,41 @@
       <option name="project" value="LOCAL" />
       <updated>1546584789192</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Second">
+      <created>1546584931266</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1546584931266</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Second">
+      <created>1546586746105</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1546586746105</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="116299000" />
+    <option name="totallyTimeSpent" value="132376000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.50226927" side_tool="true" weight="0.5561056" />
-      <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32838285" />
+      <window_info anchor="bottom" id="Application Servers" order="7" weight="0.3272727" />
       <window_info anchor="right" id="Maven Projects" order="8" weight="0.32980332" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info id="Capture Tool" order="7" />
@@ -628,23 +802,23 @@
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39933994" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="9" weight="0.32838285" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3983471" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3289256" />
+      <window_info anchor="bottom" id="Messages" order="9" weight="0.32561985" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info id="Image Layers" order="3" />
-      <window_info anchor="bottom" id="Java Enterprise" order="10" weight="0.32838285" />
+      <window_info anchor="bottom" id="Java Enterprise" order="10" weight="0.32561985" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Version Control" order="12" weight="0.3289256" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4977307" weight="0.3355372" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4751244" visible="true" weight="0.26701966" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3289256" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4751244" visible="true" weight="0.31543118" />
       <window_info id="Web" order="6" sideWeight="0.52487564" side_tool="true" weight="0.24432677" />
       <window_info anchor="right" id="Theme Preview" order="7" />
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32838285" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32561985" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -662,303 +836,10 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="26" />
+      <option name="time" value="29" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/order/ViewOrder.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="104" column="9" lean-forward="true" selection-start-line="104" selection-start-column="9" selection-end-line="104" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/per/jxnflzc/web/filter/LoggingFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="44" column="23" selection-start-line="44" selection-start-column="23" selection-end-line="44" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/per/jxnflzc/web/servlet/ViewCartServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="73">
-          <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="29" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/per/jxnflzc/web/servlet/ViewItemServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="36" column="5" lean-forward="true" selection-start-line="25" selection-start-column="4" selection-end-line="36" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/per/jxnflzc/web/servlet/ViewProductServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="36" column="5" lean-forward="true" selection-start-line="25" selection-start-column="4" selection-end-line="36" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/per/jxnflzc/web/servlet/SearchServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="34" column="5" lean-forward="true" selection-start-line="24" selection-start-column="4" selection-end-line="34" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/per/jxnflzc/web/servlet/UpdateAccountServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="94" column="5" lean-forward="true" selection-start-line="24" selection-start-column="4" selection-end-line="94" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/per/jxnflzc/web/servlet/SignonServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="56" column="5" lean-forward="true" selection-start-line="26" selection-start-column="4" selection-end-line="56" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/per/jxnflzc/web/servlet/ViewOrderServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="438">
-          <caret line="41" column="5" lean-forward="true" selection-start-line="24" selection-start-column="4" selection-end-line="41" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/per/jxnflzc/web/servlet/UpdateCartServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="44" column="5" lean-forward="true" selection-start-line="28" selection-start-column="4" selection-end-line="44" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/per/jxnflzc/web/filter/RecordFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="49" column="5" lean-forward="true" selection-start-line="19" selection-start-column="4" selection-end-line="49" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/per/jxnflzc/web/servlet/ViewRecordServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="665">
-          <caret line="52" column="5" lean-forward="true" selection-start-line="24" selection-start-column="4" selection-end-line="52" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/per/jxnflzc/BigS.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="18" column="46" selection-start-line="18" selection-start-column="46" selection-end-line="18" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/per/jxnflzc/persistence/impl/AccountDAOImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="713">
-          <caret line="116" column="74" selection-start-line="116" selection-start-column="74" selection-end-line="116" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/account/NewAccountForm.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3">
-          <caret line="68" column="8" selection-start-line="68" selection-start-column="8" selection-end-line="68" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/per/jxnflzc/web/servlet/RegisterFormServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/per/jxnflzc/web/servlet/RegisterServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1235">
-          <caret line="74" column="30" selection-start-line="74" selection-start-column="30" selection-end-line="74" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/per/jxnflzc/service/AccountService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/per/jxnflzc/persistence/impl/ItemDAOImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-313">
-          <caret line="28" column="47" lean-forward="true" selection-start-line="28" selection-start-column="47" selection-end-line="28" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/per/jxnflzc/web/servlet/AddToCartServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="684">
-          <caret line="49" column="5" lean-forward="true" selection-start-line="25" selection-start-column="4" selection-end-line="49" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/jquery-3.3.1.min.js" />
-    <entry file="file://$PROJECT_DIR$/src/per/jxnflzc/persistence/ProductDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="13" column="53" selection-start-line="13" selection-start-column="53" selection-end-line="13" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/per/jxnflzc/service/CategoryService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="46" column="5" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/per/jxnflzc/web/servlet/UsernameIsExistServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4">
-          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/per/jxnflzc/domain/Product.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="56" column="5" lean-forward="true" selection-start-line="56" selection-start-column="5" selection-end-line="56" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/per/jxnflzc/domain/CartItem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="9" column="22" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/per/jxnflzc/domain/Cart.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-226">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/per/jxnflzc/web/servlet/ViewCategoryServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/per/jxnflzc/web/servlet/ChangeCartServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
-          <caret line="22" column="51" lean-forward="true" selection-start-line="22" selection-start-column="51" selection-end-line="22" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/cart/Cart.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="55" column="43" selection-start-line="55" selection-start-column="38" selection-end-line="55" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/per/jxnflzc/persistence/impl/ProductDAOImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="20" column="131" selection-start-line="20" selection-start-column="131" selection-end-line="20" selection-end-column="131" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/account/SignonForm.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="20" column="46" lean-forward="true" selection-start-line="20" selection-start-column="46" selection-end-line="20" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/account/IncludeAccountFields.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="87" column="50" selection-start-line="87" selection-start-column="50" selection-end-line="87" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/account/NewAccountForm.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-218">
-          <caret line="23" column="98" selection-start-line="23" selection-start-column="98" selection-end-line="23" selection-end-column="98" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/account/EditAccountForm.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/per/jxnflzc/web/servlet/ImageServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-51">
-          <caret line="18" column="63" selection-start-line="18" selection-start-column="51" selection-end-line="18" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/per/jxnflzc/web/servlet/CompletionServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="35" column="43" lean-forward="true" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/per/jxnflzc/web/servlet/GetCaptchaServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="20" column="42" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/index-style.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3036" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/f-nav.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/common/IncludeBottom.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="21" column="63" lean-forward="true" selection-start-line="21" selection-start-column="63" selection-end-line="24" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/per/jxnflzc/web/servlet/NewOrderServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1824">
-          <caret line="105" selection-start-line="105" selection-end-line="105" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/per/jxnflzc/util/DBUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="3" lean-forward="true" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/catalog/Category.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1153">
@@ -970,13 +851,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2553">
           <caret lean-forward="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/common/IncludeTop.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="33" column="67" lean-forward="true" selection-start-line="33" selection-start-column="67" selection-end-line="34" selection-end-column="61" />
         </state>
       </provider>
     </entry>
@@ -994,6 +868,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/cart/Cart.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="53" column="54" selection-start-line="53" selection-start-column="54" selection-end-line="53" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/catalog/Main.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
@@ -1001,28 +882,229 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/jpetstore.js">
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/common/IncludeBottom.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="174" column="48" lean-forward="true" selection-start-line="174" selection-start-column="48" selection-end-line="174" selection-end-column="48" />
-          <folding>
-            <element signature="n#!!block;n#captchaOnClick#0" />
-            <element signature="n#!!block;n#signonCheck#0" />
-            <element signature="n#!!block;n#editAccountCheck#0" />
-            <element signature="n#!!block;n#newAccountCheck#0" />
-            <element signature="n#!!block;n#createXMLHttpRequest#0" />
-            <element signature="n#!!block;n#usernameIsExist#0" />
-            <element signature="n#!!block;n#sendRequest#0" />
-            <element signature="n#!!block;n#processResponse#0" />
-            <element signature="e#4285#4333#0" />
-          </folding>
+        <state relative-caret-position="346">
+          <caret line="22" column="57" lean-forward="true" selection-start-line="22" selection-start-column="57" selection-end-line="22" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/jquery-3.3.1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="87">
+          <caret line="3111" lean-forward="true" selection-start-line="3111" selection-end-line="3111" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="2" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/account/NewAccountForm.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="24" column="43" selection-start-line="24" selection-start-column="43" selection-end-line="24" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/per/jxnflzc/web/servlet/AddToCartServlet.java" />
+    <entry file="file://$PROJECT_DIR$/src/per/jxnflzc/web/filter/LoggingFilter.java" />
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/classes/struts.xml" />
+    <entry file="file://$PROJECT_DIR$/pom.xml" />
+    <entry file="file://$PROJECT_DIR$/src/per/jxnflzc/util/DBUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="38" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/jpetstore.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="109" column="11" selection-start-line="109" selection-start-column="11" selection-end-line="109" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/per/jxnflzc/persistence/impl/RecordDAOImpl.java" />
+    <entry file="file://$PROJECT_DIR$/src/per/jxnflzc/service/OrderService.java" />
+    <entry file="file://$PROJECT_DIR$/src/per/jxnflzc/service/CategoryService.java" />
+    <entry file="file://$PROJECT_DIR$/src/per/jxnflzc/domain/Cart.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/per/jxnflzc/domain/CartItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="27" selection-start-column="27" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/per/jxnflzc/domain/Record.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
-          <caret line="1" column="114" selection-start-line="1" selection-start-column="114" selection-end-line="1" selection-end-column="114" />
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/per/jxnflzc/domain/Category.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="11" selection-start-column="8" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/per/jxnflzc/persistence/impl/LineItemDAOImpl.java" />
+    <entry file="file://$PROJECT_DIR$/src/per/jxnflzc/persistence/impl/OrderDAOImpl.java" />
+    <entry file="file://$PROJECT_DIR$/src/per/jxnflzc/persistence/impl/CategoryDAOImpl.java" />
+    <entry file="file://$PROJECT_DIR$/src/per/jxnflzc/domain/Sequence.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-40">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/per/jxnflzc/domain/Product.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/per/jxnflzc/persistence/impl/ItemDAOImpl.java" />
+    <entry file="file://$PROJECT_DIR$/src/per/jxnflzc/domain/Order.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/per/jxnflzc/domain/LineItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/per/jxnflzc/domain/Item.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mybatis-config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="17" column="65" selection-start-line="17" selection-start-column="65" selection-end-line="17" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/per/jxnflzc/domain/Account.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/per/jxnflzc/util/SessionFactoryUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/per/jxnflzc/persistence/impl/AccountDAOImpl.java" />
+    <entry file="file://$PROJECT_DIR$/src/per/jxnflzc/service/AccountService.java" />
+    <entry file="file://$PROJECT_DIR$/src/per/jxnflzc/web/servlet/UsernameIsExistServlet.java" />
+    <entry file="file://$PROJECT_DIR$/src/per/jxnflzc/web/filter/RecordFilter.java" />
+    <entry file="file://$PROJECT_DIR$/src/per/jxnflzc/domain/AccountMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="53" selection-start-line="5" selection-start-column="53" selection-end-line="5" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/struts.xml" />
+    <entry file="file://$PROJECT_DIR$/src/per/jxnflzc/persistence/AccountDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="37" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/per/jxnflzc/persistence/OrderDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/per/jxnflzc/persistence/RecordDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/per/jxnflzc/web/action/MainAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="29" column="37" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/common/IncludeTop.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-209">
+          <caret line="33" column="67" lean-forward="true" selection-start-line="33" selection-start-column="67" selection-end-line="34" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/struts.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="22" column="30" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/account/SignonForm.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="21" column="34" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/per/jxnflzc/web/action/AccountAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="34" column="44" selection-start-line="34" selection-start-column="44" selection-end-line="34" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#signon#0;class#AccountAction#0" />
+          </folding>
         </state>
       </provider>
     </entry>

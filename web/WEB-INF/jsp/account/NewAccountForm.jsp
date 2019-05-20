@@ -20,8 +20,9 @@
         <table>
             <tr>
                 <td>User ID:</td>
-                <td id="usernameInfo">
+                <td>
                     <input type="text" name="username" id="username" onblur="usernameIsExist();"/>
+                    <div id="usernameInfo"></div>
                 </td>
             </tr>
             <tr>

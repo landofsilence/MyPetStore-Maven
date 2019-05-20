@@ -93,12 +93,11 @@ function processResponse(){
     if (xmlHttpRequest.readyState == 4){
         if (xmlHttpRequest.status == 200){
             var responseInfo = xmlHttpRequest.responseXML.getElementsByTagName("msg")[0].firstChild.data;
-            var div = document.getElementById("usernameInfo");
 
             if(responseInfo == "Exist"){
-                div.append("<p class='wrong' align='center'>Username Is Exist!</p>");
+                $("#usernameInfo").html("<p class='wrong' align='center'>Username Is Exist!</p>");
             } else {
-                div.append("<p class='right' align='center'>Username Is Not Exist!</p>");
+                $("#usernameInfo").html("<p class='right' align='center'>Username Is Not Exist!</p>");
             }
         }
     }
@@ -161,7 +160,6 @@ $("#keyword").focus(function () {
             var res = JSON.parse(data);
             var html = "";
             for(var i=0;i<res.products.length;i++){
-                //每一个div还有鼠标移出、移入点击事件
                 html+="<li class='licompletionUrl'><a href='#'class='acompletionUrl'>"+res.products[i].name +"</a></li>";
                 //<a href='viewProduct?productId=" + res.products[i].productId + "'>"+res.products[i].name +"</a>
             }
