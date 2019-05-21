@@ -16,7 +16,7 @@ import java.util.Map;
  * @version v1.0.0
  */
 public class AccountAction implements Action, ModelDriven<Account> {
-	private Account account = new Account();
+	private Account account;
 
 	public Account getAccount() {
 		return account;
