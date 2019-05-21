@@ -37,10 +37,17 @@ public class AccountService {
 	}
 
 	public Account register(Account registerAccount){
-		//accountDAO = new AccountDAOImpl();
+		Account result = null;
+		sqlSessionFactory = SessionFactoryUtil.getSqlSessionFactory();
+		sqlSession = sqlSessionFactory.openSession();
+		accountDAO = sqlSession.getMapper(AccountDAO.class);
+
 		accountDAO.registerSignonByAccount(registerAccount);
 		accountDAO.registerProfileByAccount(registerAccount);
-		return accountDAO.registerAccountByAccount(registerAccount);
+		accountDAO.registerAccountByAccount(registerAccount);
+		sqlSession.commit();
+		sqlSession.close();
+		return registerAccount;
 	}
 
 	public boolean update(Account updateAccount){

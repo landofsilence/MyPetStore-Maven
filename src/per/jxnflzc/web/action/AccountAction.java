@@ -40,8 +40,6 @@ public class AccountAction implements Action, ModelDriven<Account> {
 		Map request = (Map)context.get("request");
 		accountService = new AccountService();
 
-		System.out.println(account.getUsername());
-
 		Account result = accountService.signon(account);
 
 		if (result != null){
@@ -61,6 +59,17 @@ public class AccountAction implements Action, ModelDriven<Account> {
 		Map request = (Map)context.get("request");
 
 		session.put("account", null);
+
+		return "success";
+	}
+
+	public String register() throws Exception {
+		ActionContext context = ActionContext.getContext();
+		Map session = context.getSession();
+		Map request = (Map)context.get("request");
+
+		accountService = new AccountService();
+		System.out.println(accountService.register(account));
 
 		return "success";
 	}

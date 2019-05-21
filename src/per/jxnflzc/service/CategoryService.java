@@ -36,7 +36,10 @@ public class CategoryService {
 		sqlSessionFactory = SessionFactoryUtil.getSqlSessionFactory();
 		sqlSession = sqlSessionFactory.openSession();
 		categoryDAO = sqlSession.getMapper(CategoryDAO.class);
-		return categoryDAO.getCategory(categoryId);
+
+		Category retCategory = categoryDAO.getCategory(categoryId);
+		sqlSession.close();
+		return retCategory;
 	}
 
 	public Product getProduct(String productId) {
@@ -44,6 +47,9 @@ public class CategoryService {
 	}
 
 	public List<Product> getProductListByCategory(String categoryId) {
+		sqlSessionFactory = SessionFactoryUtil.getSqlSessionFactory();
+		sqlSession = sqlSessionFactory.openSession();
+		productDAO = sqlSession.getMapper(ProductDAO.class);
 		return productDAO.getProductListByCategory(categoryId);
 	}
 

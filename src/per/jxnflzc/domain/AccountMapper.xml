@@ -6,7 +6,18 @@
 <select id="findAccountExistByUserNameAndPassword" parameterType="per.jxnflzc.domain.Account" resultType="per.jxnflzc.domain.Account">
       select * from signon where username = #{username} and password = #{password}
     </select>
-<select id="findByUserNameAndPassword" parameterType="per.jxnflzc.domain.Account" resultType="per.jxnflzc.domain.Account">
+    <select id="findByUserNameAndPassword" parameterType="per.jxnflzc.domain.Account" resultType="per.jxnflzc.domain.Account">
       select * from account, signon where account.username = #{username} and signon.username = #{username}
+    </select>
+    <select id="registerAccountByAccount" parameterType="per.jxnflzc.domain.Account">
+      insert into account values (#{username}, #{email}, #{firstName}, #{lastName}, #{status},
+      #{address1}, #{address2}, #{city}, #{state}, #{zip}, #{country}, #{phone})
+    </select>
+    <select id="registerSignonByAccount" parameterType="per.jxnflzc.domain.Account">
+      insert into signon (username, password) values (#{username}, #{password})
+    </select>
+    <select id="registerProfileByAccount" parameterType="per.jxnflzc.domain.Account">
+      insert into profile values (#{username}, #{languagePreference}, #{favouriteCategoryId},
+       #{listOption}, #{bannerOption})
     </select>
 </mapper>

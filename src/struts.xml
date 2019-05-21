@@ -33,8 +33,21 @@
 
         <action name="viewCategory"
                 class="per.jxnflzc.web.action.CategoryAction"
-                method="execute">
+                method="viewCategory">
+            <result name="failed">/WEB-INF/jsp/catalog/Main.jsp</result>
             <result name="success">/WEB-INF/jsp/catalog/Main.jsp</result>
+        </action>
+
+        <action name="registerForm"
+                class="per.jxnflzc.web.action.AccountAction"
+                method="execute">
+            <result name="success">/WEB-INF/jsp/account/NewAccountForm.jsp</result>
+        </action>
+
+        <action name="register"
+                class="per.jxnflzc.web.action.AccountAction"
+                method="register">
+            <result name="success">/WEB-INF/jsp/account/SignonForm.jsp</result>
         </action>
         <!-- more actions can be listed here -->
 

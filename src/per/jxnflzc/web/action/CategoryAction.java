@@ -4,8 +4,9 @@ import com.opensymphony.xwork2.Action;
 import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ModelDriven;
 import per.jxnflzc.domain.Category;
-import per.jxnflzc.service.AccountService;
+import per.jxnflzc.domain.Product;
 import per.jxnflzc.service.CategoryService;
+import java.util.List;
 
 import java.util.Map;
 
@@ -36,16 +37,21 @@ public class CategoryAction implements Action, ModelDriven<Category> {
 
 	@Override
 	public String execute() throws Exception {
+
+		return null;
+	}
+
+	public String viewCategory() throws Exception {
 		ActionContext context = ActionContext.getContext();
 		Map session = context.getSession();
 		Map request = (Map)context.get("request");
 		categoryService = new CategoryService();
 
 		Category myCategory =categoryService.getCategory(category.getCategoryId());
-
+		List<Product> productList = categoryService.getProductListByCategory(categoryId);
 		System.out.println(myCategory.getName());
 
-		return null;
+		return "success";
 	}
 
 	@Override
