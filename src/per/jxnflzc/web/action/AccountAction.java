@@ -7,6 +7,7 @@ import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 import per.jxnflzc.domain.Account;
 import per.jxnflzc.persistence.AccountDAO;
+import per.jxnflzc.service.AccountService;
 import per.jxnflzc.util.SessionFactoryUtil;
 
 import java.util.Map;
@@ -16,7 +17,8 @@ import java.util.Map;
  * @version v1.0.0
  */
 public class AccountAction implements Action, ModelDriven<Account> {
-	private Account account;
+	private Account account = new Account();
+	private AccountService accountService;
 
 	public Account getAccount() {
 		return account;
@@ -36,27 +38,20 @@ public class AccountAction implements Action, ModelDriven<Account> {
 		ActionContext context = ActionContext.getContext();
 		Map session = context.getSession();
 		Map request = (Map)context.get("request");
+		accountService = new AccountService();
 
-		Account result = null;
-		SqlSessionFactory sqlSessionFactory = null;
-		SqlSession sqlSession = null;
-		try {
-			sqlSessionFactory = SessionFactoryUtil.getSqlSessionFactory();
-			sqlSession = sqlSessionFactory.openSession();
-			AccountDAO accountDAO = sqlSession.getMapper(AccountDAO.class);
-			result = accountDAO.findAccountExistByUserNameAndPassword(account);
-			if (result != null){
-				result = accountDAO.findByUserNameAndPassword(result);
-				session.put("account", result);
-			} else {
-				request.put("msg", "UserName or Password is WRONG!!!");
-				return "failed";
-			}
-		}catch (Exception e){
-			//e.printStackTrace();
-		}finally {
-			sqlSession.close();
+		System.out.println(account.getUsername());
+
+		Account result = accountService.signon(account);
+
+		if (result != null){
+			result = accountService.signon(result);
+			session.put("account", result);
+		} else {
+			request.put("msg", "Your Username or Password is WRONG!!!");
+			return "failed";
 		}
+
 		return "success";
 	}
 

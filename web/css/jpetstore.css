@@ -315,6 +315,10 @@ body>#Banner {
   background-color:#fff;
 }
 
+.wrong{
+  color: #ff0000;
+}
+
 #MyList{
   width: 30%;
   float: left;

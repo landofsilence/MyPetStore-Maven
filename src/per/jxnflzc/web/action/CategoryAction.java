@@ -2,7 +2,10 @@ package per.jxnflzc.web.action;
 
 import com.opensymphony.xwork2.Action;
 import com.opensymphony.xwork2.ActionContext;
+import com.opensymphony.xwork2.ModelDriven;
 import per.jxnflzc.domain.Category;
+import per.jxnflzc.service.AccountService;
+import per.jxnflzc.service.CategoryService;
 
 import java.util.Map;
 
@@ -10,8 +13,9 @@ import java.util.Map;
  * @author 河木
  * @version v1.0.0
  */
-public class CategoryAction implements Action {
-	private Category category;
+public class CategoryAction implements Action, ModelDriven<Category> {
+	private Category category = new Category();
+	private CategoryService categoryService;
 	private String categoryId;
 
 	public Category getCategory() {
@@ -35,9 +39,17 @@ public class CategoryAction implements Action {
 		ActionContext context = ActionContext.getContext();
 		Map session = context.getSession();
 		Map request = (Map)context.get("request");
+		categoryService = new CategoryService();
 
-		System.out.println(categoryId);
+		Category myCategory =categoryService.getCategory(category.getCategoryId());
+
+		System.out.println(myCategory.getName());
 
 		return null;
+	}
+
+	@Override
+	public Category getModel() {
+		return category;
 	}
 }

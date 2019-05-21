@@ -5,3 +5,7 @@ JPetStore By LandOfSilence
 ------	
     第一次使用Struts2+MyBatis进行重写
     使用了Github进行项目管理
+2019.5.21
+------	
+    完成了登录登出功能
+    
