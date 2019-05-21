@@ -1,5 +1,6 @@
 package per.jxnflzc.persistence;
 
+import org.apache.ibatis.annotations.Param;
 import per.jxnflzc.domain.Item;
 
 import java.util.List;
@@ -12,9 +13,9 @@ public interface ItemDAO {
 
 	//void updateInventoryQuantity(Map<String, Object> param);
 
-	int getInventoryQuantity(String itemId);
+	int getInventoryQuantity(@Param("itemId") String itemId);
 
-	List<Item> getItemListByProduct(String productId);
+	List<Item> getItemListByProduct(@Param("productId") String productId);
 
 	Item getItem(String itemId);
 }

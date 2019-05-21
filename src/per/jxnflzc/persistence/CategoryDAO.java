@@ -1,5 +1,7 @@
 package per.jxnflzc.persistence;
 
+
+import org.apache.ibatis.annotations.Param;
 import per.jxnflzc.domain.Category;
 
 import java.util.List;
@@ -12,5 +14,5 @@ public interface CategoryDAO {
 
 	List<Category> getCategoryList();
 
-	Category getCategory(String categoryId);
+	Category getCategory(@Param("categoryId") String categoryId);
 }

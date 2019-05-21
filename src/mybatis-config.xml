@@ -10,11 +10,13 @@
                 <property name="driver" value="com.mysql.jdbc.Driver"/>
                 <property name="url" value="jdbc:mysql://127.0.0.1:3306/mypetstore?useSSL=false"/>
                 <property name="username" value="root"/>
-                <property name="password" value="990806"/>
+                <property name="password" value="853172836"/>
             </dataSource>
         </environment>
     </environments>
     <mappers>
         <mapper resource="per/jxnflzc/domain/AccountMapper.xml"/>
+        <mapper resource="per/jxnflzc/domain/CategoryMapper.xml"/>
+        <mapper resource="per/jxnflzc/domain/ItemMapper.xml"/>
     </mappers>
 </configuration>
