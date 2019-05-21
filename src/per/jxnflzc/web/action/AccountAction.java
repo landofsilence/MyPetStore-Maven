@@ -69,7 +69,41 @@ public class AccountAction implements Action, ModelDriven<Account> {
 		Map request = (Map)context.get("request");
 
 		accountService = new AccountService();
-		System.out.println(accountService.register(account));
+		accountService.register(account);
+
+		return "success";
+	}
+
+	public String editForm() throws Exception {
+		ActionContext context = ActionContext.getContext();
+		Map session = context.getSession();
+		Map request = (Map)context.get("request");
+
+		accountService = new AccountService();
+		Account editAccount = (Account)session.get("account");
+		editAccount = accountService.load(editAccount);
+		session.put("account", editAccount);
+
+		return "success";
+	}
+
+	public String edit() throws Exception {
+		ActionContext context = ActionContext.getContext();
+		Map session = context.getSession();
+		Map request = (Map)context.get("request");
+
+		accountService = new AccountService();
+		Account sessionAccount = (Account)session.get("account");
+
+		if (account.getPassword().trim().equals("")){
+			account.setPassword(sessionAccount.getPassword());
+		}
+		Account editAccount = (Account)session.get("account");
+		account.setUsername(editAccount.getUsername());
+
+		accountService.update(account);
+
+		session.put("account", account);
 
 		return "success";
 	}

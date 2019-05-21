@@ -262,8 +262,8 @@ public class Order implements Serializable {
 
     shipToFirstName = account.getFirstName();
     shipToLastName = account.getLastName();
-    shipAddress1 = account.getAddress1();
-    shipAddress2 = account.getAddress2();
+    shipAddress1 = account.getAddr1();
+    shipAddress2 = account.getAddr2();
     shipCity = account.getCity();
     shipState = account.getState();
     shipZip = account.getZip();
@@ -271,8 +271,8 @@ public class Order implements Serializable {
 
     billToFirstName = account.getFirstName();
     billToLastName = account.getLastName();
-    billAddress1 = account.getAddress1();
-    billAddress2 = account.getAddress2();
+    billAddress1 = account.getAddr1();
+    billAddress2 = account.getAddr2();
     billCity = account.getCity();
     billState = account.getState();
     billZip = account.getZip();

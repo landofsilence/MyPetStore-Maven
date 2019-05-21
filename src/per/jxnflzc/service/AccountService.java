@@ -37,7 +37,6 @@ public class AccountService {
 	}
 
 	public Account register(Account registerAccount){
-		Account result = null;
 		sqlSessionFactory = SessionFactoryUtil.getSqlSessionFactory();
 		sqlSession = sqlSessionFactory.openSession();
 		accountDAO = sqlSession.getMapper(AccountDAO.class);
@@ -51,14 +50,27 @@ public class AccountService {
 	}
 
 	public boolean update(Account updateAccount){
-		//accountDAO = new AccountDAOImpl();
+		Account result = null;
+		sqlSessionFactory = SessionFactoryUtil.getSqlSessionFactory();
+		sqlSession = sqlSessionFactory.openSession();
+		accountDAO = sqlSession.getMapper(AccountDAO.class);
+
+		accountDAO.updateAccountByAccount(updateAccount);
 		accountDAO.updateSignonByAccount(updateAccount);
 		accountDAO.updateProfileByAccount(updateAccount);
-		return accountDAO.updateAccountByAccount(updateAccount);
+		sqlSession.commit();
+		sqlSession.close();
+		return true;
 	}
 
 	public Account load(Account account){
-		//accountDAO = new AccountDAOImpl();
-		return accountDAO.findEditAccount(account);
+		Account result = null;
+		sqlSessionFactory = SessionFactoryUtil.getSqlSessionFactory();
+		sqlSession = sqlSessionFactory.openSession();
+		accountDAO = sqlSession.getMapper(AccountDAO.class);
+
+		result = accountDAO.findEditAccount(account);
+		sqlSession.close();
+		return result;
 	}
 }

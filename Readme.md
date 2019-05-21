@@ -6,6 +6,7 @@ JPetStore By LandOfSilence
 * 登录
 * 登出
 * 注册（有两个参数取不到，~~qtmd~~）
+* 修改信息
 * ......（完善中）
 
 2019.5.21

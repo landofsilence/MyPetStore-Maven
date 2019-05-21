@@ -4,7 +4,6 @@ import java.util.List;
 
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
-import per.jxnflzc.domain.Account;
 import per.jxnflzc.domain.Item;
 import per.jxnflzc.domain.Product;
 import per.jxnflzc.domain.Category;

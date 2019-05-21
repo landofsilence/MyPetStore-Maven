@@ -23,7 +23,7 @@ public interface AccountDAO {
 
 	Account updateSignonByAccount(Account registerAccount);
 
-	boolean updateAccountByAccount(Account registerAccount);
+	Account updateAccountByAccount(Account registerAccount);
 
 	Account updateProfileByAccount(Account registerAccount);
 }
