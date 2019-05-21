@@ -3,10 +3,10 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="per.jxnflzc.persistence.AccountDAO">
-    <select id="findAccountExistByUserNameAndPassword" parameterType="per.jxnflzc.domain.Account" resultType="per.jxnflzc.domain.Account">
+<select id="findAccountExistByUserNameAndPassword" parameterType="per.jxnflzc.domain.Account" resultType="per.jxnflzc.domain.Account">
       select * from signon where username = #{username} and password = #{password}
     </select>
-    <select id="findByUserNameAndPassword" parameterType="per.jxnflzc.domain.Account" resultType="per.jxnflzc.domain.Account">
+<select id="findByUserNameAndPassword" parameterType="per.jxnflzc.domain.Account" resultType="per.jxnflzc.domain.Account">
       select * from account, signon where account.username = #{username} and signon.username = #{username}
     </select>
 </mapper>

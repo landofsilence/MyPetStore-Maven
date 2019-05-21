@@ -9,45 +9,16 @@
 <%@ include file="../common/IncludeTop.jsp"%>
 
 <!----><script type="text/javascript" src="js/main.js"></script>
-<div class="nav-box text-color">
 
-    <ul class="f-nav" id='f-nav'>
-        <li>Main</li>
-        <li>Fish</li>
-        <li>Dogs</li>
-        <li>Cats</li>
-        <li>Reptiles</li>
-        <li>Birds</li>
-        <div class='sideline'></div></ul>
-</div>
-<div>
-<div class="swiper-card-wrapper">
-    <div class="swiper-card">
-        <div class="swiper-container swiper-container-card">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide" data-mtpis='Exotic Varieties'><a href="viewCategory?categoryId=BIRDS"><img src="images/card_3.jpg"/></a></div>
-                <div class="swiper-slide" data-mtpis='Various Breeds'><a href="viewCategory?categoryId=DOGS"><img src="images/card_4.jpg"/></a></div>
-                <div class="swiper-slide" data-mtpis='Saltwater, Freshwater'><a href="viewCategory?categoryId=FISH"><img src="images/card_1.jpg"/></a></div>
-                <div class="swiper-slide" data-mtpis='Lizards, Turtles, Snakes'><a href="viewCategory?categoryId=REPTILES"><img src="images/card_5.jpg"/></a></div>
-                <div class="swiper-slide" data-mtpis='Various Breeds, Exotic Varieties'><a href="viewCategory?categoryId=CATS"><img src="images/card_2.jpg"/></a></div>
-            </div>
-            <!-- Add Pagination -->
-            <div class="swiper-pagination"></div>
-
-        </div>
-    </div>
-</div>
-<div class="btn-card-prev"></div>
-<div class="btn-card-next"></div>
 </div>
 
-    <div id="Welcome">
-        <div id="WelcomeContent">
-            Welcome to MyPetStore!
-        </div>
-    </div>
 
     <div id="Main">
+        <div id="Welcome">
+            <div id="WelcomeContent">
+                Welcome to MyPetStore!
+            </div>
+        </div>
         <div id="Sidebar">
             <div id="SidebarContent">
                 <a href="viewCategory?categoryId=FISH"><img src="images/fish_icon.gif"/></a>
@@ -79,7 +50,7 @@
         </div>
         <div id="Separator">&nbsp;</div>
     </div>
-
+<%--
 <script  type="text/javascript">
     //卡片切换
     var swiper = new Swiper('.swiper-container-card', {
@@ -131,7 +102,7 @@
     });
 
 
-</script>
+</script>--%>
 
 
 <%@ include file="../common/IncludeBottom.jsp"%>

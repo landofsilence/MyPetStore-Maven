@@ -77,8 +77,7 @@
     </div>
 
     <div id="QuickLinks" class="text-color">
-        <img src=""/>
-        <!--<a href="viewCategory?categoryId=FISH">
+        <a href="viewCategory?categoryId=FISH">
             <img src ="images/sm_fish.gif"/>
         </a>
         <img src="images/separator.gif"/>
@@ -96,7 +95,7 @@
         <img src="images/separator.gif"/>
         <a href="viewCategory?categoryId=BIRDS">
             <img src="images/sm_birds.gif"/>
-        </a>-->
+        </a>
     </div>
 
 </div>
