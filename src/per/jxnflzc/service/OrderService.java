@@ -32,7 +32,8 @@ public class OrderService {
 
         sqlSessionFactory = SessionFactoryUtil.getSqlSessionFactory();
         sqlSession = sqlSessionFactory.openSession();
-        orderDAO = sqlSession.getMapper(OrderDAO.class);
+		orderDAO = sqlSession.getMapper(OrderDAO.class);
+		lineItemDAO = sqlSession.getMapper(LineItemDAO.class);
 		orderDAO.insertOrder(order);
 		orderDAO.insertOrderStatus(order);
 
@@ -40,6 +41,9 @@ public class OrderService {
             LineItem lineItem = (LineItem) order.getLineItems().get(i);
 			lineItemDAO.insertLineItem(lineItem);
         }
+
+		sqlSession.commit();
+        sqlSession.close();
     }
 
     public Order getOrder(int orderId) {
@@ -57,12 +61,17 @@ public class OrderService {
           item.setQuantity(itemDAO.getInventoryQuantity(lineItem.getItemId()));
           lineItem.setItem(item);
         }
+		sqlSession.close();
 
         return order;
     }
 
     public int getNewId(){
-        return orderDAO.getNewId();
+		sqlSessionFactory = SessionFactoryUtil.getSqlSessionFactory();
+		sqlSession = sqlSessionFactory.openSession();
+		orderDAO = sqlSession.getMapper(OrderDAO.class);
+
+        return orderDAO.getNewId().size();
 
     }
 

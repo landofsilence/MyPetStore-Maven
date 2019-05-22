@@ -54,14 +54,14 @@
                 <img align="middle" name="img_cart" src="images/cart.gif"/>
             </a>
             <img align="middle" src="images/separator.gif"/>
-            <c:if test="${sessionScope.account == null}">
+            <s:if test="#session.account  == null">
                 <a href="SignonForm">Sign On</a>
-            </c:if>
-            <c:if test="${sessionScope.account != null}">
+            </s:if>
+            <s:if test="#session.account  != null">
                 <a href="Signout">Sign Out</a>
                 <img align="middle" src="images/separator.gif"/>
                 <a href="editAccountForm">My Account</a>
-            </c:if>
+            </s:if>
             <img align="middle" src="images/separator.gif"/>
             <a href="help.html">?</a>
         </div>

@@ -6,7 +6,7 @@
     <select id="getLineItemsByOrderId" resultType="per.jxnflzc.domain.LineItem">
         select * from lineitem where orderid=#{orderId}
     </select>
-    <insert id="insertLineItem" useGeneratedKeys="true" keyProperty="linenum" parameterType="per.jxnflzc.domain.LineItem">
-        insert into lineitem(orderid,itemid,quantity,unitprice) values(#{oderId},#{itemId},#{quantity},#{unitprice})
+    <insert id="insertLineItem" useGeneratedKeys="true" keyProperty="lineNumber" parameterType="per.jxnflzc.domain.LineItem">
+        insert into lineitem(orderid,itemid,quantity,unitprice) values(#{orderId},#{itemId},#{quantity},#{unitPrice})
     </insert>
 </mapper>

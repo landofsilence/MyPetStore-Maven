@@ -18,23 +18,27 @@
     </select>
 
     <select id="getOrder" resultType="per.jxnflzc.domain.Order" resultMap="orderResultMap">
-        select * from orders where orderid=#{orderid}
+        select * from orders where orderid=#{orderId}
     </select>
 
     <insert id="insertOrder" parameterType="per.jxnflzc.domain.Order">
         INSERT INTO ORDERS (ORDERID, USERID, ORDERDATE, SHIPADDR1, SHIPADDR2, SHIPCITY,
  SHIPSTATE,SHIPZIP, SHIPCOUNTRY, BILLADDR1, BILLADDR2, BILLCITY, BILLSTATE, BILLZIP,
  BILLCOUNTRY,COURIER, TOTALPRICE, BILLTOFIRSTNAME, BILLTOLASTNAME, SHIPTOFIRSTNAME,
- SHIPTOLASTNAME,CREDITCARD, EXPRDATE, CARDTYPE, LOCALE) VALUES(#{orderid},#{username},#{orderDate},
+ SHIPTOLASTNAME,CREDITCARD, EXPRDATE, CARDTYPE, LOCALE) VALUES(#{orderId},#{username},#{orderDate},
  #{shipAddress1},#{shipAddress2},#{shipCity},#{shipState},#{shipZip},#{shipCountry},#{billAddress1},
  #{billAddress2},#{billCity},#{billState},#{billZip},#{billCountry},#{courier},#{totalPrice},
  #{billToFirstName},#{billToLastName},#{shipToFirstName},#{shipToLastName},#{creditCard}
  ,#{expiryDate},#{cardType},#{locale})
     </insert>
-    
+
     <insert id="insertOrderStatus">
-        insert into ORDERSTATUS (ORDERID, LINENUM, STATUS) +VALUES (#{orderid},#{number},#{status})
+        insert into ORDERSTATUS (ORDERID, LINENUM, TIMESTAMP, STATUS) VALUES (#{orderId},#{number}, #{orderDate},#{status})
     </insert>
+
+    <select id="getNewId" resultMap="orderResultMap">
+        SELECT orderId FROM ORDERS
+    </select>
 
 
 
