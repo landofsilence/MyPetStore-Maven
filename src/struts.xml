@@ -80,6 +80,12 @@
             <result name="success">WEB-INF/jsp/catalog/Product.jsp</result>
         </action>
 
+        <action name="viewItem"
+                class="per.jxnflzc.web.action.ItemAction"
+                method="viewItem">
+            <result name="success">WEB-INF/jsp/catalog/Item.jsp</result>
+        </action>
+
         <action name="checkout"
                 class="per.jxnflzc.web.action.CheckoutAction"
                 method="excute">

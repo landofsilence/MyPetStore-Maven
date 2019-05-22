@@ -5,6 +5,7 @@ import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ModelDriven;
 import per.jxnflzc.domain.Cart;
 import per.jxnflzc.domain.Item;
+import per.jxnflzc.domain.Product;
 import per.jxnflzc.service.CategoryService;
 
 import javax.swing.*;
@@ -53,6 +54,19 @@ public class ItemAction implements Action, ModelDriven<Item> {
 		}
 
 		session.put("cart", cart);
+		return "success";
+	}
+
+	public String viewItem() throws Exception {
+		ActionContext context = ActionContext.getContext();
+		Map session = context.getSession();
+
+		CategoryService categoryService = new CategoryService();
+		item = categoryService.getItem(item.getItemId());
+		Product product = item.getProduct();
+
+		session.put("item", item);
+		session.put("product", product);
 		return "success";
 	}
 
