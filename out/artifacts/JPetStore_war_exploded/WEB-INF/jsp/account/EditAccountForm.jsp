@@ -49,12 +49,12 @@
             </tr>
             <tr>
                 <td>Address 1:</td>
-                <td><input name="address1"
-                           value="${sessionScope.account.address1}" type="text" size="40"></td>
+                <td><input name="addr1"
+                           value="${sessionScope.account.addr1}" type="text" size="40"></td>
             </tr>
             <tr>
                 <td>Address 2:</td>
-                <td><input name="address2" value="${sessionScope.account.address2}"
+                <td><input name="addr2" value="${sessionScope.account.addr2}"
                            type="text" size="40"></td>
             </tr>
             <tr>
@@ -123,13 +123,13 @@
                     </c:if>
                 </td>
             </tr>
-            <tr>
+            <!--<tr>
                 <td colspan="2"><img align="center" alt="Captcha" id="captchaImage" onclick="captchaOnClick()" src="imageServlet"/></td>
             </tr>
             <tr>
                 <td>Captcha</td>
                 <td><input type="text" class="inputCaptcha" name="inputCaptcha" /></td>
-            </tr>
+            </tr>-->
 
             </tbody>
         </table>

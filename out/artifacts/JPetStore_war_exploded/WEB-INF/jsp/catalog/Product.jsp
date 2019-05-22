@@ -11,13 +11,13 @@
 
 <div class="nav-box text-color">
     <ul class="f-nav" id='f-nav'>
-        <li>Main</li>
-        <li>Fish</li>
-        <li>Dogs</li>
-        <li>Cats</li>
-        <li>Reptiles</li>
-        <li>Birds</li>
-        <div class='sideline'></div>
+        <%--<li>Main</li>--%>
+        <%--<li>Fish</li>--%>
+        <%--<li>Dogs</li>--%>
+        <%--<li>Cats</li>--%>
+        <%--<li>Reptiles</li>--%>
+        <%--<li>Birds</li>--%>
+        <%--<div class='sideline'></div>--%>
     </ul>
 <div id="BackLink">
     <a href="viewCategory?categoryId=${sessionScope.product.categoryId}">Return to ${sessionScope.product.categoryId}</a>

@@ -21,7 +21,7 @@
             <tr>
                 <td>User ID:</td>
                 <td>
-                    <input type="text" name="username" id="username" onblur="usernameIsExist();"/>
+                    <input type="text" name="username" id="username"/><!-- onblur="usernameIsExist();"/>-->
                     <div id="usernameInfo"></div>
                 </td>
             </tr>

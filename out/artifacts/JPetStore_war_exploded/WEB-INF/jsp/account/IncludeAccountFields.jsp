@@ -27,11 +27,11 @@
     </tr>
     <tr>
         <td>Address 1:</td>
-        <td><input type="text" name="address1" /></td>
+        <td><input type="text" name="addr1" /></td>
     </tr>
     <tr>
         <td>Address 2:</td>
-        <td><input type="text" name="address2" size="40" /></td>
+        <td><input type="text" name="addr2" size="40" /></td>
     </tr>
     <tr>
         <td>City:</td>
@@ -80,13 +80,13 @@
         <td>Enable MyBanner</td>
         <td><input type="checkbox" name="bannerOption" value="1" /></td>
     </tr>
-    <tr>
+    <!--<tr>
         <td colspan="2"><img align="center" alt="Captcha" id="captchaImage" onclick="captchaOnClick()" src="imageServlet"/></td>
     </tr>
     <tr>
         <td>Captcha</td>
         <td><input type="text" class="inputCaptcha" name="inputCaptcha" /></td>
-    </tr>
+    </tr>-->
 
 
 </table>

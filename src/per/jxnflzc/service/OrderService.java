@@ -1,11 +1,13 @@
 package per.jxnflzc.service;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
+import per.jxnflzc.domain.Cart;
 import per.jxnflzc.domain.Item;
 import per.jxnflzc.domain.LineItem;
 import per.jxnflzc.domain.Order;
@@ -27,6 +29,10 @@ public class OrderService {
         order.setStatus("ready");
         order.setCourier("shunfeng");
         order.setLocale("#");
+
+        sqlSessionFactory = SessionFactoryUtil.getSqlSessionFactory();
+        sqlSession = sqlSessionFactory.openSession();
+        orderDAO = sqlSession.getMapper(OrderDAO.class);
 		orderDAO.insertOrder(order);
 		orderDAO.insertOrderStatus(order);
 
@@ -69,6 +75,8 @@ public class OrderService {
 		sqlSession.close();
 		return orderList;
     }
+
+
 
 
 

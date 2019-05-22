@@ -37,11 +37,11 @@
 		</tr>
 		<tr>
 			<td>Address 1:</td>
-			<td><input type="text" size="40" name="billAddress1" value="${sessionScope.account.address1}"/></td>
+			<td><input type="text" size="40" name="billAddress1" value="${sessionScope.account.addr1}"/></td>
 		</tr>
 		<tr>
 			<td>Address 2:</td>
-			<td><input type="text" size="40" name="billAddress2" value="${sessionScope.account.address2}"/></td>
+			<td><input type="text" size="40" name="billAddress2" value="${sessionScope.account.addr2}"/></td>
 		</tr>
 		<tr>
 			<td>City:</td>
@@ -83,11 +83,11 @@
 			</tr>
 			<tr>
 				<td>Address 1:</td>
-				<td><input type="text" size="40" name="shipAddress1" value="${sessionScope.account.address1}"/></td>
+				<td><input type="text" size="40" name="shipAddress1" value="${sessionScope.account.addr1}"/></td>
 			</tr>
 			<tr>
 				<td>Address 2:</td>
-				<td><input type="text" size="40" name="shipAddress2" value="${sessionScope.account.address2}"/></td>
+				<td><input type="text" size="40" name="shipAddress2" value="${sessionScope.account.addr2}"/></td>
 			</tr>
 			<tr>
 				<td>City:</td>

@@ -125,7 +125,7 @@ press continue...
 
 </table>
 
-<a href="NewOrder?skipType=4" class="Button">
+<a href="insertOrder" class="Button">
 Confirm
 </a></div>
 

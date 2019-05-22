@@ -92,10 +92,17 @@
             <result name="checkout">WEB-INF/jsp/cart/Checkout.jsp</result>
         </action>
 
-        <action name="NewOrder"
+        <action name="NewOrder1"
                 class="per.jxnflzc.web.action.CheckoutAction"
                 method="checkout">
             <result name="checkout">WEB-INF/jsp/order/NewOrderForm.jsp</result>
+            <result name="notSuccess">WEB-INF/jsp/account/SignonForm.jsp</result>
+        </action>
+
+        <action name="NewOrder"
+                class="per.jxnflzc.web.action.ConfirmAction"
+                method="confirm">
+            <result name="checkout">WEB-INF/jsp/order/ConfirmOrder.jsp</result>
         </action>
 
         <action name="addItemToCart"
@@ -107,6 +114,12 @@
         <action name="changeCart"
                 class="per.jxnflzc.web.action.ItemAction"
                 method="changeCart">
+        </action>
+
+        <action name="insertOrder"
+                class="per.jxnflzc.web.action.CheckoutAction"
+                method="checkout2">
+            <result name="checkout">WEB-INF/jsp/order/OrderSuccess.jsp</result>
         </action>
         <!-- more actions can be listed here -->
 
