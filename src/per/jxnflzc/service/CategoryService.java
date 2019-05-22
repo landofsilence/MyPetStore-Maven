@@ -62,7 +62,7 @@ public class CategoryService {
 		sqlSession = sqlSessionFactory.openSession();
 		productDAO = sqlSession.getMapper(ProductDAO.class);
 
-		return productDAO.searchProductList(keyword.toLowerCase());
+		return productDAO.searchProductList("%" + keyword.toLowerCase() + "%");
 	}
 
 	public List<Item> getItemListByProduct(String productId) {
