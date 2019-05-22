@@ -15,7 +15,7 @@
     </select>
 
     <select id="searchProductList" resultType="per.jxnflzc.domain.Product" resultMap="productResultMap">
-        SELECT productid, category AS categoryId, name, descn AS description FROM product WHERE name LIKE #{keyword}
+        SELECT productid, category, name, descn AS description FROM product WHERE name LIKE #{keyword}
     </select>
 
 

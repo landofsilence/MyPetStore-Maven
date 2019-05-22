@@ -1,5 +1,7 @@
 package per.jxnflzc.domain;
 
+import per.jxnflzc.service.OrderService;
+
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.ArrayList;
@@ -37,9 +39,23 @@ public class Order implements Serializable {
   private String cardType;
   private String locale;
   private String status;
+  private int number;
   private List<LineItem> lineItems = new ArrayList<LineItem>();
 
-  public int getOrderId() {
+	public Order() {
+		OrderService orderService = new OrderService();
+		this.setOrderId(orderService.getNewId() + 1);
+	}
+
+	public int getNumber() {
+		return number;
+	}
+
+	public void setNumber(int number) {
+		this.number = number;
+	}
+
+	public int getOrderId() {
     return orderId;
   }
 
@@ -286,12 +302,13 @@ public class Order implements Serializable {
     courier = "UPS";
     locale = "CA";
     status = "P";
+    number = lineItems.size();
 
-    Iterator<CartItem> i = cart.getAllCartItems();
+    /*Iterator<CartItem> i = cart.getAllCartItems();
     while (i.hasNext()) {
       CartItem cartItem = (CartItem) i.next();
       addLineItem(cartItem);
-    }
+    }*/
 
   }
 
