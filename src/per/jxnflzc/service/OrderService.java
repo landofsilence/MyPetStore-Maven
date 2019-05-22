@@ -51,6 +51,7 @@ public class OrderService {
 		sqlSession = sqlSessionFactory.openSession();
 		orderDAO = sqlSession.getMapper(OrderDAO.class);
 		lineItemDAO = sqlSession.getMapper(LineItemDAO.class);
+		itemDAO = sqlSession.getMapper(ItemDAO.class);
         Order order = orderDAO.getOrder(orderId);
         order.setLineItems(lineItemDAO.getLineItemsByOrderId(orderId));
 
@@ -66,12 +67,12 @@ public class OrderService {
         return order;
     }
 
-    public int getNewId(){
+    public List<Order> getNewId(){
 		sqlSessionFactory = SessionFactoryUtil.getSqlSessionFactory();
 		sqlSession = sqlSessionFactory.openSession();
 		orderDAO = sqlSession.getMapper(OrderDAO.class);
 
-        return orderDAO.getNewId().size();
+        return orderDAO.getNewId();
 
     }
 

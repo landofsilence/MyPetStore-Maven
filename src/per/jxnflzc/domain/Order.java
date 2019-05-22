@@ -43,8 +43,8 @@ public class Order implements Serializable {
   private List<LineItem> lineItems = new ArrayList<LineItem>();
 
 	public Order() {
-		OrderService orderService = new OrderService();
-		this.setOrderId(orderService.getNewId() + 1);
+		//OrderService orderService = new OrderService();
+		//this.setOrderId(orderService.getNewId().size() + 1);
 	}
 
 	public int getNumber() {

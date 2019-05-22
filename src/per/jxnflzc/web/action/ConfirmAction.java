@@ -30,8 +30,12 @@ public class ConfirmAction extends ActionSupport implements ModelDriven<Order> {
 		Account account = (Account)session.get("account");
 		Cart cart = (Cart)session.get("cart");
         List<LineItem> lineItems = new ArrayList<>();
+
+        OrderService orderService = new OrderService();
+        order.setOrderId(orderService.getNewId().size() + 1);
         for(int i = 0;i < sessionCart.getCartItemList().size();i++){
 			LineItem lineItem = new LineItem(i, sessionCart.getCartItemList().get(i));
+			lineItem.setOrderId(order.getOrderId());
 			lineItem.calculateTotal();
             lineItems.add(lineItem);
 
