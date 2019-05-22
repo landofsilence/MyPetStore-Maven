@@ -79,6 +79,12 @@
                 method="viewProduct">
             <result name="success">WEB-INF/jsp/catalog/Product.jsp</result>
         </action>
+        
+        <action name="checkout"
+                class="per.jxnflzc.web.action.CheckoutAction"
+                method="excute">
+            <result name="checkout">WEB-INF/jsp/cart/Checkout.jsp</result>
+        </action>
         <!-- more actions can be listed here -->
 
     </package>
