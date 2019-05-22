@@ -92,9 +92,10 @@
             <result name="checkout">WEB-INF/jsp/cart/Checkout.jsp</result>
         </action>
 
-        <action name="completion"
-                class="per.jxnflzc.web.action.SearchAction"
-                method="completion">
+        <action name="NewOrder"
+                class="per.jxnflzc.web.action.CheckoutAction"
+                method="checkout">
+            <result name="checkout">WEB-INF/jsp/order/NewOrderForm.jsp</result>
         </action>
 
         <action name="addItemToCart"
