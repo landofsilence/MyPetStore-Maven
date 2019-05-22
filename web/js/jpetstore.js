@@ -114,9 +114,10 @@ $("#keyword").keyup(function () {
     $.ajax({
         type:"post",
         url:"completion",
-        data:{name:keyword, time:time},
+        data:{keyword:keyword, time:time},
         success:function(data){
             //拼接html
+            console.log(data)
             var res = JSON.parse(data);
             var html = "";
             for(var i=0;i<res.products.length;i++){

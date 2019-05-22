@@ -10,8 +10,12 @@
         SELECT productid, category, name, descn AS description FROM product WHERE category = #{categoryId}
     </select>
 
-   <select id="getProduct" resultType="per.jxnflzc.domain.Product">
+    <select id="getProduct" resultType="per.jxnflzc.domain.Product">
         SELECT productid, category AS categoryId, name, descn AS description FROM product WHERE productid = #{productId}
+    </select>
+
+    <select id="searchProductList" resultType="per.jxnflzc.domain.Product" resultMap="productResultMap">
+        SELECT productid, category AS categoryId, name, descn AS description FROM product WHERE name LIKE #{keyword}
     </select>
 
 
