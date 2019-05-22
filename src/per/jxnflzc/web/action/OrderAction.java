@@ -41,8 +41,9 @@ public class OrderAction implements Action, ModelDriven<Order> {
 		Map request = (Map)context.get("request");
 		OrderService orderService = new OrderService();
 		Account account = (Account)session.get("account");
+		System.out.println("order.getOrderId() = " + order.getOrderId());
 
-		if(order.getOrderId() < 0) {
+		if(order.getOrderId() <= 0) {
 			List<Order> orderList = orderService.getOrdersByUsername(account.getUsername());
 			session.put("orderList", orderList);
 			return "list";

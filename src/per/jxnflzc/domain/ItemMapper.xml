@@ -19,7 +19,7 @@
         select * from item where productid = #{productId}
     </select>
 
-    <select id="getItem" resultType="per.jxnflzc.domain.Item">
+    <select id="getItem" resultType="per.jxnflzc.domain.Item" resultMap="itemResultMap">
         select * from item where itemid = #{itemId}
     </select>
 </mapper>

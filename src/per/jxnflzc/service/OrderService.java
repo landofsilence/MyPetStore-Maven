@@ -19,9 +19,9 @@ import per.jxnflzc.util.SessionFactoryUtil;
 public class OrderService {
 	private SqlSessionFactory sqlSessionFactory = null;
 	private SqlSession sqlSession = null;
-	private ItemDAO itemMapper;
+	private ItemDAO itemDAO;
 	private OrderDAO orderDAO = null;
-	private LineItemDAO lineItemMapper;
+	private LineItemDAO lineItemDAO;
 
     public void insertOrder(Order order) {
         order.setStatus("ready");
@@ -32,19 +32,23 @@ public class OrderService {
 
         for (int i = 0; i < order.getLineItems().size(); i++) {
             LineItem lineItem = (LineItem) order.getLineItems().get(i);
-            lineItemMapper.insertLineItem(lineItem);
+			lineItemDAO.insertLineItem(lineItem);
         }
     }
 
     public Order getOrder(int orderId) {
+		sqlSessionFactory = SessionFactoryUtil.getSqlSessionFactory();
+		sqlSession = sqlSessionFactory.openSession();
+		orderDAO = sqlSession.getMapper(OrderDAO.class);
+		lineItemDAO = sqlSession.getMapper(LineItemDAO.class);
         Order order = orderDAO.getOrder(orderId);
-        order.setLineItems(lineItemMapper.getLineItemsByOrderId(orderId));
-        System.out.println("number" + order.getLineItems().size());
+        order.setLineItems(lineItemDAO.getLineItemsByOrderId(orderId));
+
         for (int i = 0; i < order.getLineItems().size(); i++) {
           LineItem lineItem = (LineItem) order.getLineItems().get(i);
 
-          Item item = itemMapper.getItem(lineItem.getItemId());
-          item.setQuantity(itemMapper.getInventoryQuantity(lineItem.getItemId()));
+          Item item = itemDAO.getItem(lineItem.getItemId());
+          item.setQuantity(itemDAO.getInventoryQuantity(lineItem.getItemId()));
           lineItem.setItem(item);
         }
 

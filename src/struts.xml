@@ -85,6 +85,11 @@
                 method="addItemToCart">
             <result name="success">WEB-INF/jsp/cart/Cart.jsp</result>
         </action>
+
+        <action name="changeCart"
+                class="per.jxnflzc.web.action.ItemAction"
+                method="changeCart">
+        </action>
         <!-- more actions can be listed here -->
 
     </package>
