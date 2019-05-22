@@ -31,49 +31,49 @@
             <tbody>
             <tr>
                 <td>First name:</td>
-                <td><input name="firstName" value="${sessionScope.account.firstName}" type="text"></td>
+                <td><input name="firstName" value="<s:property value=' #session.account.firstName'/>" type="text"></td>
             </tr>
             <tr>
                 <td>Last name:</td>
-                <td><input name="lastName" value="${sessionScope.account.lastName}" type="text"></td>
+                <td><input name="lastName" value="<s:property value=' #session.account.lastName'/> " type="text"></td>
             </tr>
             <tr>
                 <td>Email:</td>
-                <td><input name="email"
-                           value="${sessionScope.account.email}" type="" size="40"></td>
+                <td><input name="email" value="<s:property value=' #session.account.email'/> "
+                           type="" size="40"></td>
             </tr>
             <tr>
                 <td>Phone:</td>
-                <td><input name="phone" value="${sessionScope.account.phone}"
+                <td><input name="phone" value="<s:property value=' #session.account.phone'/> "
                            type="text"></td>
             </tr>
             <tr>
                 <td>Address 1:</td>
-                <td><input name="addr1"
-                           value="${sessionScope.account.addr1}" type="text" size="40"></td>
+                <td><input name="addr1" value="<s:property value=' #session.account.addr1'/> "
+                            type="text" size="40"></td>
             </tr>
             <tr>
                 <td>Address 2:</td>
-                <td><input name="addr2" value="${sessionScope.account.addr2}"
+                <td><input name="addr2"  value="<s:property value=' #session.account.addr2'/> "
                            type="text" size="40"></td>
             </tr>
             <tr>
                 <td>City:</td>
-                <td><input name="city" value="${sessionScope.account.city}" type="text"></td>
+                <td><input name="city" value="<s:property value=' #session.account.city'/> " type="text"></td>
             </tr>
             <tr>
                 <td>State:</td>
-                <td><input name="state" value="${sessionScope.account.state}" type="text"
+                <td><input name="state" value="<s:property value=' #session.account.state'/> "  type="text"
                            size="4"></td>
             </tr>
             <tr>
                 <td>Zip:</td>
-                <td><input name="zip" value="${sessionScope.account.zip}" type="text"
+                <td><input name="zip" value="<s:property value=' #session.account.zip'/> "  type="text"
                            size="10"></td>
             </tr>
             <tr>
                 <td>Country:</td>
-                <td><input name="country" value="${sessionScope.account.country}" type="text"
+                <td><input name="country"  value="<s:property value=' #session.account.country'/> "  type="text"
                            size="15"></td>
             </tr>
             </tbody>
