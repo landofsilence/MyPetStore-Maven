@@ -3,10 +3,21 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="per.jxnflzc.persistence.OrderDAO">
+
     <resultMap type="per.jxnflzc.domain.Order" id="orderResultMap" autoMapping="true">
         <result column="userid" property="username"/>
+        <result column="BILLADDR1" property="billAddress1"/>
+        <result column="BILLADDR2" property="billAddress2"/>
+        <result column="SHIPADDR1" property="shipAddress1"/>
+        <result column="SHIPADDR2" property="shipAddress2"/>
+        <result column="EXPRDATE" property="expiryDate"/>
     </resultMap>
+
     <select id="getOrdersByUsername" resultMap="orderResultMap">
+        select * from orders where userid=#{username}
+    </select>
+
+    <select id="getOrder" resultType="per.jxnflzc.domain.Order" resultMap="orderResultMap">
         select * from orders where userid=#{username}
     </select>
 
