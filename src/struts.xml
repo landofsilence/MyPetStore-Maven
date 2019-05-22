@@ -98,6 +98,11 @@
             <result name="checkout">WEB-INF/jsp/order/NewOrderForm.jsp</result>
         </action>
 
+        <action name="completion"
+                class="per.jxnflzc.web.action.SearchAction"
+                method="completion">
+        </action>
+
         <action name="addItemToCart"
                 class="per.jxnflzc.web.action.ItemAction"
                 method="addItemToCart">
