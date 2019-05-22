@@ -67,6 +67,13 @@
                 method="execute">
             <result name="success">/WEB-INF/jsp/cart/Cart.jsp</result>
         </action>
+
+        <action name="viewOrder"
+                class="per.jxnflzc.web.action.OrderAction"
+                method="execute">
+            <result name="list">/WEB-INF/jsp/order/ListOrders.jsp</result>
+            <result name="view">/WEB-INF/jsp/order/ViewOrder.jsp</result>
+        </action>
         <!-- more actions can be listed here -->
 
     </package>

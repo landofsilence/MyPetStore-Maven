@@ -37,7 +37,6 @@ public class CategoryAction implements Action, ModelDriven<Category> {
 
 	@Override
 	public String execute() throws Exception {
-
 		return null;
 	}
 

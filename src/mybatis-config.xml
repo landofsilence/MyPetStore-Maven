@@ -22,5 +22,6 @@
         <mapper resource="per/jxnflzc/domain/AccountMapper.xml"/>
         <mapper resource="per/jxnflzc/domain/CategoryMapper.xml"/>
         <mapper resource="per/jxnflzc/domain/ItemMapper.xml"/>
+        <mapper resource="per/jxnflzc/domain/OrderMapper.xml"/>
     </mappers>
 </configuration>

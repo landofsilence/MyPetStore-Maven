@@ -4,6 +4,7 @@ import com.opensymphony.xwork2.Action;
 import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ModelDriven;
 import per.jxnflzc.domain.Cart;
+import per.jxnflzc.service.OrderService;
 
 import java.util.Map;
 
@@ -38,6 +39,6 @@ public class CartAction implements Action, ModelDriven<Cart> {
 
 	@Override
 	public Cart getModel() {
-		return null;
+		return cart;
 	}
 }
