@@ -42,6 +42,10 @@ public class CategoryService {
 	}
 
 	public Product getProduct(String productId) {
+		sqlSessionFactory = SessionFactoryUtil.getSqlSessionFactory();
+		sqlSession = sqlSessionFactory.openSession();
+		productDAO = sqlSession.getMapper(ProductDAO.class);
+
 		return productDAO.getProduct(productId);
 	}
 
@@ -66,6 +70,10 @@ public class CategoryService {
 	}
 
 	public Item getItem(String itemId) {
+		sqlSessionFactory = SessionFactoryUtil.getSqlSessionFactory();
+		sqlSession = sqlSessionFactory.openSession();
+		itemDAO = sqlSession.getMapper(ItemDAO.class);
+
 		return itemDAO.getItem(itemId);
 	}
 

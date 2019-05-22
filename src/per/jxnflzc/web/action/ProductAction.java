@@ -34,9 +34,9 @@ public class ProductAction implements Action, ModelDriven<Product> {
 	public String viewProduct() throws Exception {
 		ActionContext context = ActionContext.getContext();
 		Map session = context.getSession();
-		Map request = (Map)context.get("request");
 		categoryService = new CategoryService();
 
+		product = categoryService.getProduct(product.getProductId());
 		List<Item> itemList = categoryService.getItemListByProduct(product.getProductId());
 
 		session.put("product", product);

@@ -10,4 +10,8 @@
         SELECT productid, category, name, descn AS description FROM product WHERE category = #{categoryId}
     </select>
 
+    <select id="getProduct" resultType="per.jxnflzc.domain.Product">
+        SELECT productid, category AS categoryId, name, descn AS description FROM product WHERE productid = #{productId}
+    </select>
+
 </mapper>
