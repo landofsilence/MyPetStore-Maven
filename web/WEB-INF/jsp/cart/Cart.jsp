@@ -33,7 +33,7 @@
                             <td id="item">
                                 <a id="itemId" href="viewItem?itemId=${cartItem.item.itemId}">${cartItem.item.itemId}</a>
                             </td>
-                            <td>${cartItem.item.productId}</td>
+                            <td>${cartItem.item.productId} </td>
                             <td>${cartItem.item.attribute1} ${cartItem.item.attribute2}
                                     ${cartItem.item.attribute3} ${cartItem.item.attribute4}
                                     ${cartItem.item.attribute5} ${cartItem.item.product.name}</td>
