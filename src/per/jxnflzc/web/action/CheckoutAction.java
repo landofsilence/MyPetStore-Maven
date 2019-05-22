@@ -13,4 +13,8 @@ public class CheckoutAction implements Action {
         return "checkout";
     }
 
+    public String checkout() throws Exception{
+        return "checkout";
+    }
+
 }
