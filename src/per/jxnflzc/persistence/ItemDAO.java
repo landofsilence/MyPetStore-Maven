@@ -17,5 +17,5 @@ public interface ItemDAO {
 
 	List<Item> getItemListByProduct(@Param("productId") String productId);
 
-	Item getItem(String itemId);
+	Item getItem(@Param("itemId")String itemId);
 }

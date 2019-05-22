@@ -2,13 +2,14 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="per.jxnflzc.persistence.CategoryDAO">
+<mapper namespace="per.jxnflzc.persistence.ItemDAO">
     <select id="getInventoryQuantity" resultType="int">
       select qty from inventory where itemid = #{itemId}
     </select>
     <select id="getItemListByProduct" resultType="per.jxnflzc.domain.Item">
-        select
+        select * from item where productid = #{productId}
     </select>
-
-
+    <select id="getItem" resultType="per.jxnflzc.domain.Item">
+        select * from item where itemid = #{itemId}
+    </select>
 </mapper>

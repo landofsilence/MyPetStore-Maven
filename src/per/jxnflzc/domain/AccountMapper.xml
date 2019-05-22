@@ -9,30 +9,30 @@
     <select id="findByUserNameAndPassword" parameterType="per.jxnflzc.domain.Account" resultType="per.jxnflzc.domain.Account">
       select * from account, signon where account.userid = #{username} and signon.username = #{username}
     </select>
-    <select id="registerAccountByAccount" parameterType="per.jxnflzc.domain.Account">
+    <insert id="registerAccountByAccount" parameterType="per.jxnflzc.domain.Account">
       insert into account values (#{username}, #{email}, #{firstName}, #{lastName}, #{status},
       #{address1}, #{address2}, #{city}, #{state}, #{zip}, #{country}, #{phone})
-    </select>
-    <select id="registerSignonByAccount" parameterType="per.jxnflzc.domain.Account">
+    </insert>
+    <insert id="registerSignonByAccount" parameterType="per.jxnflzc.domain.Account">
       insert into signon (username, password) values (#{username}, #{password})
-    </select>
-    <select id="registerProfileByAccount" parameterType="per.jxnflzc.domain.Account">
+    </insert>
+    <insert id="registerProfileByAccount" parameterType="per.jxnflzc.domain.Account">
       insert into profile values (#{username}, #{languagePreference}, #{favouriteCategoryId},
        #{listOption}, #{bannerOption})
-    </select>
+    </insert>
     <select id="findEditAccount" parameterType="per.jxnflzc.domain.Account" resultType="per.jxnflzc.domain.Account">
       SELECT * FROM profile, account, signon WHERE profile.userid = #{username} AND
       account.userid = #{username} AND signon.username = #{username}
 </select>
-    <select id="updateAccountByAccount" parameterType="per.jxnflzc.domain.Account">
+    <update id="updateAccountByAccount" parameterType="per.jxnflzc.domain.Account">
       UPDATE account SET email = #{email}, firstname = #{firstname}, lastname = #{lastname}, addr1 = #{addr1},
       addr2 = #{addr2}, city = #{city}, state = #{state}, zip = #{zip}, country = #{country}, phone = #{phone}
       WHERE userid = #{username}
-    </select>
-    <select id="updateSignonByAccount" parameterType="per.jxnflzc.domain.Account">
+    </update>
+    <update id="updateSignonByAccount" parameterType="per.jxnflzc.domain.Account">
       UPDATE signon SET password = #{password} WHERE username = #{username}
-    </select>
-    <select id="updateProfileByAccount" parameterType="per.jxnflzc.domain.Account" resultType="per.jxnflzc.domain.Account">
+    </update>
+    <update id="updateProfileByAccount" parameterType="per.jxnflzc.domain.Account">
       UPDATE profile SET langpref = #{languagePreference}, favcategory = #{favouriteCategoryId}, mylistopt = #{listOption},
-      banneropt = #{bannerOption} WHERE userid = #{username}</select>
+      banneropt = #{bannerOption} WHERE userid = #{username}</update>
 </mapper>
