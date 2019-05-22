@@ -6,9 +6,19 @@
     <select id="getInventoryQuantity" resultType="int">
       select qty from inventory where itemid = #{itemId}
     </select>
-    <select id="getItemListByProduct" resultType="per.jxnflzc.domain.Item">
+
+    <resultMap type="per.jxnflzc.domain.Item" id="itemResultMap" autoMapping="true">
+        <result column="supplier" property="supplierId"/>
+        <result column="attr1" property="attribute1"/>
+        <result column="attr2" property="attribute2"/>
+        <result column="attr3" property="attribute3"/>
+        <result column="attr4" property="attribute4"/>
+        <result column="attr5" property="attribute5"/>
+    </resultMap>
+    <select id="getItemListByProduct" resultMap="itemResultMap">
         select * from item where productid = #{productId}
     </select>
+
     <select id="getItem" resultType="per.jxnflzc.domain.Item">
         select * from item where itemid = #{itemId}
     </select>

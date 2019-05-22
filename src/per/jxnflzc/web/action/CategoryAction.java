@@ -47,8 +47,14 @@ public class CategoryAction implements Action, ModelDriven<Category> {
 		categoryService = new CategoryService();
 
 		Category myCategory =categoryService.getCategory(category.getCategoryId());
-		List<Product> productList = categoryService.getProductListByCategory(categoryId);
-		System.out.println(myCategory.getName());
+		List<Product> productList = categoryService.getProductListByCategory(category.getCategoryId());
+
+		session.put("category", category);
+		session.put("productList", productList);
+
+		for (int i = 0; i < productList.size(); i++){
+			System.out.println(productList.get(i).getName());
+		}
 
 		return "success";
 	}

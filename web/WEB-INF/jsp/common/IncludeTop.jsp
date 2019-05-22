@@ -17,8 +17,8 @@
 <head>
     <link rel="StyleSheet" href="css/jpetstore.css" type="text/css"
           media="screen"/>
-    <link type="text/css" href="css/swiper.min.css" rel="stylesheet" />
-    <link type="text/css" href="css/f-nav.css" rel="stylesheet" />
+    <%--<link type="text/css" href="css/swiper.min.css" rel="stylesheet" />--%>
+    <%--<link type="text/css" href="css/f-nav.css" rel="stylesheet" />--%>
 
 
     <meta name="generator"
@@ -32,9 +32,9 @@
     <meta http-equiv="Expires" content="Tue, 01 Jan 1980 1:00:00 GMT"/>
     <meta http-equiv="Pragma" content="no-cache"/>
     <script type="text/javascript" src="/js/jquery-3.3.1.js"></script>
-    <script type="text/javascript" src="js/swiper.min.js"></script>
-    <script type="text/javascript" src="js/snow.js"></script>
-    <script type="text/javascript" src="js/index-style.js"></script>
+    <%--<script type="text/javascript" src="js/swiper.min.js"></script>--%>
+    <%--<script type="text/javascript" src="js/snow.js"></script>--%>
+    <%--<script type="text/javascript" src="js/index-style.js"></script>--%>
 
 </head>
 

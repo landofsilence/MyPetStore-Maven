@@ -31,13 +31,6 @@
             <result name="success">/WEB-INF/jsp/catalog/Main.jsp</result>
         </action>
 
-        <action name="viewCategory"
-                class="per.jxnflzc.web.action.CategoryAction"
-                method="viewCategory">
-            <result name="failed">/WEB-INF/jsp/catalog/Main.jsp</result>
-            <result name="success">/WEB-INF/jsp/catalog/Main.jsp</result>
-        </action>
-
         <action name="registerForm"
                 class="per.jxnflzc.web.action.AccountAction"
                 method="execute">
@@ -73,6 +66,18 @@
                 method="execute">
             <result name="list">/WEB-INF/jsp/order/ListOrders.jsp</result>
             <result name="view">/WEB-INF/jsp/order/ViewOrder.jsp</result>
+        </action>
+
+        <action name="viewCategory"
+                class="per.jxnflzc.web.action.CategoryAction"
+                method="viewCategory">
+            <result name="success">WEB-INF/jsp/catalog/Category.jsp</result>
+        </action>
+
+        <action name="viewProduct"
+                class="per.jxnflzc.web.action.ProductAction"
+                method="viewProduct">
+            <result name="success">WEB-INF/jsp/catalog/Product.jsp</result>
         </action>
         <!-- more actions can be listed here -->
 

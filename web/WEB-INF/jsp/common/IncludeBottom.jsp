@@ -20,8 +20,8 @@
 </div>
 </body>
 <script type="text/javascript" src="/js/jpetstore.js"></script>
-<script type="text/javascript" src="js/snow.js"></script>
-<script type="text/javascript" src="js/swiper.min.js"></script>
-<script type="text/javascript" src="js/index-style.js"></script>
+<%--<script type="text/javascript" src="js/snow.js"></script>--%>
+<%--<script type="text/javascript" src="js/swiper.min.js"></script>--%>
+<%--<script type="text/javascript" src="js/index-style.js"></script>--%>
 </html>
 
