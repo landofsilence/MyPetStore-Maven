@@ -46,7 +46,7 @@
 		</table>
     <c:if test="${sessionScope.cart.numberOfItems > 0}">
 
-        <a href="NewOrder?skipType=1" class="Button">Proceed to Checkout</a>
+        <a href="NewOrder1" class="Button">Proceed to Checkout</a>
     </c:if>
 
 </div>
