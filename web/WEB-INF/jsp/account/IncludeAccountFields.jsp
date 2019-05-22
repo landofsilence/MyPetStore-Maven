@@ -27,11 +27,11 @@
     </tr>
     <tr>
         <td>Address 1:</td>
-        <td><input type="text" name="address1" /></td>
+        <td><input type="text" name="addr1" /></td>
     </tr>
     <tr>
         <td>Address 2:</td>
-        <td><input type="text" name="address2" size="40" /></td>
+        <td><input type="text" name="addr2" size="40" /></td>
     </tr>
     <tr>
         <td>City:</td>

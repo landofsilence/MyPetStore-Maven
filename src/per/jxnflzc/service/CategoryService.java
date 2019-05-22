@@ -78,6 +78,10 @@ public class CategoryService {
 	}
 
 	public boolean isItemInStock(String itemId) {
+		sqlSessionFactory = SessionFactoryUtil.getSqlSessionFactory();
+		sqlSession = sqlSessionFactory.openSession();
+		itemDAO = sqlSession.getMapper(ItemDAO.class);
+
 		return itemDAO.getInventoryQuantity(itemId) > 0;
 	}
 }

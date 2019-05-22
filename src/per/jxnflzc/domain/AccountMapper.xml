@@ -25,7 +25,7 @@
       account.userid = #{username} AND signon.username = #{username}
 </select>
     <update id="updateAccountByAccount" parameterType="per.jxnflzc.domain.Account">
-      UPDATE account SET email = #{email}, firstname = #{firstname}, lastname = #{lastname}, addr1 = #{addr1},
+      UPDATE account SET email = #{email}, firstname = #{firstName}, lastname = #{lastName}, addr1 = #{addr1},
       addr2 = #{addr2}, city = #{city}, state = #{state}, zip = #{zip}, country = #{country}, phone = #{phone}
       WHERE userid = #{username}
     </update>

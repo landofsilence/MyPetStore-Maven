@@ -16,7 +16,7 @@ import java.util.Map;
  */
 public class OrderAction implements Action, ModelDriven<Order> {
 	private Order order = new Order();
-	private Integer orderId;
+	private String orderId;
 
 	public Order getOrder() {
 		return order;
@@ -26,11 +26,11 @@ public class OrderAction implements Action, ModelDriven<Order> {
 		this.order = order;
 	}
 
-	public Integer getOrderId() {
+	public String getOrderId() {
 		return orderId;
 	}
 
-	public void setOrderId(Integer orderId) {
+	public void setOrderId(String orderId) {
 		this.orderId = orderId;
 	}
 
@@ -38,15 +38,16 @@ public class OrderAction implements Action, ModelDriven<Order> {
 	public String execute() throws Exception {
 		ActionContext context = ActionContext.getContext();
 		Map session = context.getSession();
+		Map request = (Map)context.get("request");
 		OrderService orderService = new OrderService();
 		Account account = (Account)session.get("account");
+		System.out.println("order.getOrderId() = " + order.getOrderId());
 
-		if(((Integer)order.getOrderId()) == null) {
+		if(order.getOrderId() <= 0) {
 			List<Order> orderList = orderService.getOrdersByUsername(account.getUsername());
 			session.put("orderList", orderList);
 			return "list";
 		} else {
-			List<Order> orderList = (List) session.get("orderList");
 			Order findOrder = orderService.getOrder(order.getOrderId());
 
 			session.put("order",findOrder);
