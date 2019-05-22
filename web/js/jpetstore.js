@@ -114,7 +114,7 @@ $("#keyword").keyup(function () {
     $.ajax({
         type:"post",
         url:"completion",
-        data:{name:keyword, time:time},
+        data:{keyword:keyword, time:time},
         success:function(data){
             //拼接html
             var res = JSON.parse(data);

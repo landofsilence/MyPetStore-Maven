@@ -58,6 +58,10 @@ public class CategoryService {
 	}
 
 	public List<Product> searchProductList(String keyword) {
+		sqlSessionFactory = SessionFactoryUtil.getSqlSessionFactory();
+		sqlSession = sqlSessionFactory.openSession();
+		productDAO = sqlSession.getMapper(ProductDAO.class);
+
 		return productDAO.searchProductList(keyword.toLowerCase());
 	}
 

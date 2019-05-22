@@ -88,8 +88,13 @@
 
         <action name="checkout"
                 class="per.jxnflzc.web.action.CheckoutAction"
-                method="excute">
+                method="execute">
             <result name="checkout">WEB-INF/jsp/cart/Checkout.jsp</result>
+        </action>
+
+        <action name="completion"
+                class="per.jxnflzc.web.action.SearchAction"
+                method="completion">
         </action>
 
         <action name="addItemToCart"
