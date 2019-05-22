@@ -14,5 +14,5 @@ public interface OrderDAO {
   
   void insertOrderStatus(Order order);
 
-   List getNewId();
+    List<Order> getNewId();
 }

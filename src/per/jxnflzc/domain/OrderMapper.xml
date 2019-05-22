@@ -36,8 +36,8 @@
         insert into ORDERSTATUS (ORDERID, LINENUM, TIMESTAMP, STATUS) VALUES (#{orderId},#{number}, #{orderDate},#{status})
     </insert>
 
-    <select id="getNewId" resultMap="orderResultMap">
-        SELECT orderId FROM ORDERS
+    <select id="getNewId" resultType="per.jxnflzc.domain.Order"  resultMap="orderResultMap">
+        SELECT * FROM ORDERS
     </select>
 
 
