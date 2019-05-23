@@ -23,7 +23,7 @@
 
     <div id="Catalog">
 
-        <h2>${sessionScope.category.name}</h2>
+        <h2><s:property value="category.categoryId"/></h2>
 
         <table>
             <tr>

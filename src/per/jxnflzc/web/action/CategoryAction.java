@@ -18,6 +18,15 @@ public class CategoryAction implements Action, ModelDriven<Category> {
 	private Category category = new Category();
 	private CategoryService categoryService;
 	private String categoryId;
+	private List<Product> productList;
+
+	public List<Product> getProductList() {
+		return productList;
+	}
+
+	public void setProductList(List<Product> productList) {
+		this.productList = productList;
+	}
 
 	public Category getCategory() {
 		return category;
@@ -47,9 +56,11 @@ public class CategoryAction implements Action, ModelDriven<Category> {
 		categoryService = new CategoryService();
 
 		Category myCategory =categoryService.getCategory(category.getCategoryId());
-		List<Product> productList = categoryService.getProductListByCategory(category.getCategoryId());
+		productList = categoryService.getProductListByCategory(category.getCategoryId());
 
+		/*
 		session.put("category", category);
+		*/
 		session.put("productList", productList);
 
 		for (int i = 0; i < productList.size(); i++){
