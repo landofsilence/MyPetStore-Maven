@@ -4,7 +4,6 @@ import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.*;
 
 import java.io.Reader;
-import java.sql.Connection;
 
 /**
  * @author 河木
