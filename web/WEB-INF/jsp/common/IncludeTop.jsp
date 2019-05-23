@@ -71,7 +71,7 @@
         <div id="SearchContent" class="main-color text-color">
             <form action="search" method="post">
                 <input type="text" id="keyword" name="keyword" size="14" autocomplete="off" disableautocomplete/>
-                <ul  id="completion" class="completion"></ul>
+                <%--<ul  id="completion" class="completion"></ul>--%>
                 <input type="submit" name="searchProducts" value="Search"/>
             </form>
         </div>

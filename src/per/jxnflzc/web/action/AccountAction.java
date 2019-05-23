@@ -50,6 +50,9 @@ public class AccountAction implements Action, ModelDriven<Account> {
 			return "failed";
 		}
 
+		String checkCode = (String)session.get("checkCode");
+		System.out.println("checkCode = " + checkCode);
+
 		return "success";
 	}
 

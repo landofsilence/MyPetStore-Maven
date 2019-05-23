@@ -15,8 +15,8 @@
             </p>
             <p>Username:<input id="username" type="text" name="username" /><br />
                 Password:<input id="password" type="password" name="password" /><br />
-                <!--<img alt="Captcha" id="captchaImage" onclick="captchaOnClick()" src="imageServlet"/> <br />
-                Captcha:<input type="text" name="inputCaptcha"class="inputCaptcha" /><br />-->
+                <img alt="Captcha" id="captchaImage" onclick="captchaOnClick()" src="image"/> <br />
+                Captcha:<input type="text" name="inputCaptcha"class="inputCaptcha" /><br />
             </p>
             <p id="signonWrong" class="wrong">
                 ${requestScope.msg}

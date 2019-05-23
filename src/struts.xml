@@ -127,10 +127,23 @@
                 method="changeCart">
         </action>
 
+        <action name="removeItemFromCart"
+                class="per.jxnflzc.web.action.CartAction"
+                method="removeItemFromCart">
+            <result name="success">/WEB-INF/jsp/cart/Cart.jsp</result>
+        </action>
+
         <action name="insertOrder"
                 class="per.jxnflzc.web.action.CheckoutAction"
                 method="checkout2">
             <result name="checkout">WEB-INF/jsp/order/OrderSuccess.jsp</result>
+        </action>
+
+        <action name="image" class="per.jxnflzc.web.action.CreateImageAction">
+            <result name="success" type="stream">
+                <param name="contentType">image/jpeg</param>
+                <param name="inputName">inputStream</param>
+            </result>
         </action>
         <!-- more actions can be listed here -->
 

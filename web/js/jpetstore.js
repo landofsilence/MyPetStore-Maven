@@ -1,6 +1,6 @@
 function captchaOnClick() {
     var time = new Date().getTime();
-    document.getElementById("captchaImage").src = "imageServlet?d=" + time;
+    document.getElementById("captchaImage").src = "image?d=" + time;
 }
 
 function signonCheck() {
@@ -103,7 +103,7 @@ function processResponse(){
     }
 }
 
-$("#keyword").keyup(function () {
+/*$("#keyword").keyup(function () {
     var keyword = $("#keyword").val();
     if(keyword == ""){
         $("#completion").css("display", "none");
@@ -177,7 +177,7 @@ $("#keyword").focus(function () {
             }
         }
     });
-});
+});*/
 
 $(".number").keyup(function () {
     var number = $(this).val();
@@ -198,7 +198,7 @@ $(".number").keyup(function () {
 
 })
 
-$(".inputCaptcha").blur(function () {
+/*$(".inputCaptcha").blur(function () {
     var inputCaptcha = $(this).val();
     var captcha = null;
     $.ajax({
@@ -220,7 +220,7 @@ $(".inputCaptcha").blur(function () {
     });
 
 
-})
+})*/
 
 $("ul").on("mouseenter", "li",function () {
     var keyword = $(this).children(".acompletionUrl").text();

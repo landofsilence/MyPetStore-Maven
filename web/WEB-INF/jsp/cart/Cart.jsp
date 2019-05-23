@@ -46,7 +46,7 @@
                             <td class="total"><fmt:formatNumber value="${cartItem.total}"
                                                   pattern="$#,##0.00"/></td>
                             <td>
-                                <a href="removeItemFromCartServlet?itemId=${cartItem.item.itemId}" class="Button">Remove</a>
+                                <a href="removeItemFromCart?itemId=${cartItem.item.itemId}" class="Button">Remove</a>
                             </td>
                         </tr>
                     </c:forEach>
