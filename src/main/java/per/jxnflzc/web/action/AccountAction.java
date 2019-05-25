@@ -18,6 +18,7 @@ import java.util.Map;
  */
 public class AccountAction implements Action, ModelDriven<Account> {
 	private Account account = new Account();
+	private String inputCaptcha;
 	private AccountService accountService;
 
 	public Account getAccount() {
@@ -26,6 +27,14 @@ public class AccountAction implements Action, ModelDriven<Account> {
 
 	public void setAccount(Account account) {
 		this.account = account;
+	}
+
+	public String getInputCaptcha() {
+		return inputCaptcha;
+	}
+
+	public void setInputCaptcha(String inputCaptcha) {
+		this.inputCaptcha = inputCaptcha;
 	}
 
 	@Override
@@ -40,20 +49,26 @@ public class AccountAction implements Action, ModelDriven<Account> {
 		Map request = (Map)context.get("request");
 		accountService = new AccountService();
 
-		Account result = accountService.signon(account);
+		String checkCode = (String)session.get("checkCode");
 
-		if (result != null){
-			result = accountService.signon(result);
-			session.put("account", result);
+		if (getInputCaptcha().equals(checkCode)){
+			Account result = accountService.signon(account);
+
+			if (result != null){
+				result = accountService.signon(result);
+				session.put("account", result);
+			} else {
+				request.put("msg", "Your Username or Password is WRONG!!!");
+				return "failed";
+			}
+			return "success";
 		} else {
-			request.put("msg", "Your Username or Password is WRONG!!!");
+			request.put("msg", "Your Captcha is WRONG!!!");
 			return "failed";
 		}
 
-		String checkCode = (String)session.get("checkCode");
-		System.out.println("checkCode = " + checkCode);
 
-		return "success";
+
 	}
 
 	public String signout() throws Exception {
@@ -71,16 +86,23 @@ public class AccountAction implements Action, ModelDriven<Account> {
 		Map session = context.getSession();
 		Map request = (Map)context.get("request");
 
-		accountService = new AccountService();
-		accountService.register(account);
+		String checkCode = (String)session.get("checkCode");
 
-		return "success";
+		if (getInputCaptcha().equals(checkCode)){
+			accountService = new AccountService();
+			accountService.register(account);
+
+			return "success";
+		} else {
+			request.put("msg", "Your Captcha is WRONG!!!");
+			return "failed";
+		}
+
 	}
 
 	public String editForm() throws Exception {
 		ActionContext context = ActionContext.getContext();
 		Map session = context.getSession();
-		Map request = (Map)context.get("request");
 
 		accountService = new AccountService();
 		Account editAccount = (Account)session.get("account");
@@ -88,6 +110,7 @@ public class AccountAction implements Action, ModelDriven<Account> {
 		session.put("account", editAccount);
 
 		return "success";
+
 	}
 
 	public String edit() throws Exception {
@@ -95,20 +118,29 @@ public class AccountAction implements Action, ModelDriven<Account> {
 		Map session = context.getSession();
 		Map request = (Map)context.get("request");
 
-		accountService = new AccountService();
-		Account sessionAccount = (Account)session.get("account");
 
-		if (account.getPassword().trim().equals("")){
-			account.setPassword(sessionAccount.getPassword());
+		String checkCode = (String)session.get("checkCode");
+
+		if (getInputCaptcha().equals(checkCode)){
+			accountService = new AccountService();
+			Account sessionAccount = (Account)session.get("account");
+
+			if (account.getPassword().trim().equals("")){
+				account.setPassword(sessionAccount.getPassword());
+			}
+			Account editAccount = (Account)session.get("account");
+			account.setUsername(editAccount.getUsername());
+
+			accountService.update(account);
+
+			session.put("account", account);
+
+			return "success";
+		} else {
+			return "failed";
 		}
-		Account editAccount = (Account)session.get("account");
-		account.setUsername(editAccount.getUsername());
 
-		accountService.update(account);
 
-		session.put("account", account);
-
-		return "success";
 	}
 
 	@Override

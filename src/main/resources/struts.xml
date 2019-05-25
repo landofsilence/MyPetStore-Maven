@@ -47,6 +47,7 @@
                 class="per.jxnflzc.web.action.AccountAction"
                 method="register">
             <result name="success">/WEB-INF/jsp/account/SignonForm.jsp</result>
+            <result name="failed">/WEB-INF/jsp/account/NewAccountForm.jsp</result>
         </action>
 
         <action name="editAccountForm"
@@ -59,6 +60,7 @@
                 class="per.jxnflzc.web.action.AccountAction"
                 method="edit">
             <result name="success">/WEB-INF/jsp/catalog/Main.jsp</result>
+            <result name="failed">/WEB-INF/jsp/account/EditAccountForm.jsp</result>
         </action>
 
         <action name="viewCart"

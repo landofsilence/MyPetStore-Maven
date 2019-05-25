@@ -80,13 +80,13 @@
         <td>Enable MyBanner</td>
         <td><input type="checkbox" name="bannerOption" value="1" /></td>
     </tr>
-    <!--<tr>
-        <td colspan="2"><img align="center" alt="Captcha" id="captchaImage" onclick="captchaOnClick()" src="imageServlet"/></td>
+    <tr>
+        <td colspan="2"><img align="center" alt="Captcha" id="captchaImage" onclick="captchaOnClick()" src="image"/></td>
     </tr>
     <tr>
         <td>Captcha</td>
         <td><input type="text" class="inputCaptcha" name="inputCaptcha" /></td>
-    </tr>-->
+    </tr>
 
 
 </table>
